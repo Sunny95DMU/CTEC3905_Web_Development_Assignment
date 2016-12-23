@@ -11,8 +11,6 @@
         var URL = "https://api.flickr.com/services/rest/?method=flickr.photosets.getPhotos&api_key=033e5308293f68eb18e315a31ebd0ee7&photoset_id=" + setId +"&privacy_filter=1&per_page=20&format=json&nojsoncallback=1";
 
         var xhr = new XMLHttpRequest();
-        xhr.open('GET', URL);
-        xhr.send(null);
 
         xhr.onreadystatechange = function() {
             if (this.readyState === 4 && this.status === 200) {
@@ -20,6 +18,9 @@
               gatherData(myArr, galleryContainer);
             }
         };
+        
+        xhr.open('GET', URL, true);
+        xhr.send(null);
 
     }
 
