@@ -8,9 +8,9 @@
 
     function getFlickrImages(setId, galleryContainer) {
 
-        var URL = "https://api.flickr.com/services/rest/?method=flickr.photosets.getPhotos&api_key=033e5308293f68eb18e315a31ebd0ee7&photoset_id=" + setId +"&privacy_filter=1&per_page=20&format=json&nojsoncallback=1";
+        let URL = "https://api.flickr.com/services/rest/?method=flickr.photosets.getPhotos&api_key=033e5308293f68eb18e315a31ebd0ee7&photoset_id=" + setId +"&privacy_filter=1&per_page=20&format=json&nojsoncallback=1";
 
-        var xhr = new XMLHttpRequest();
+        let xhr = new XMLHttpRequest();
 
         xhr.onreadystatechange = function() {
             if (this.readyState === 4 && this.status === 200) {
