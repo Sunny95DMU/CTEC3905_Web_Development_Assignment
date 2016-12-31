@@ -36,10 +36,13 @@
           
         let img_src = "https://farm" + arr.photoset.photo[i].farm + ".static.flickr.com/" + arr.photoset.photo[i].server + "/" + arr.photoset.photo[i].id + "_" + arr.photoset.photo[i].secret + "_m.jpg";
         let img = document.createElement("img");
+        let section = document.createElement("section");
           
         img.src = img_src;
+        section.setAttribute("class", "col-lg-3");
           
-        galleryContainer.appendChild(img);
+        section.appendChild(img);
+        galleryContainer.appendChild(section);
           
       }
    
