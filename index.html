@@ -1,20 +1,286 @@
 <!DOCTYPE html>
-<html>
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Loading public Flickr images onto your website. | Sandbox by Lovell D&apos;souza.</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width">
+<html>
+    
+<head>    
+    
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+    
+  <title>SunnyShoots</title>
+  
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.css" type="text/css" />
+  <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.css" type="text/css" />
+    
 </head>
     
 <body>
+  
+  <main class="main">
     
-<div id="hongkong-flickr-images"></div>
-<div id="england-flickr-images"></div>
+   
+    <section class="jumbotron one">
+    
+    <section class="container">
 
-<script src="js/JSON-Flickr-Data.js"></script>
+      <header>
+
+        <a class="open menuHandler" href="#"><span class="glyphicon glyphicon-th-list"></span><span>Menu</span></a>
+        <a class="pull-right" href="#"><span class="logo">Logo</span></a>
+
+        <nav class="hidden navbar navbar-default">
+
+          <section class="nav closeMenu">
+
+           <a class="close menuHandler" href="#"><span class="icon-remove"></span><span>Close</span></a>
+
+          </section>
+
+          <section class="nav Content">
+            
+           <label><a href="#">Home</a></label>
+
+           <input id="tab2" type="radio" name="tabs">
+           <label for="tab2"><span>Gallery</span></label>
+
+           <input id="tab3" type="radio" name="tabs">
+           <label for="tab3"><span>About Me</span></label>
+
+           <input id="tab4" type="radio" name="tabs">
+           <label for="tab4"><span>Contact Me</span></label>
+
+           <input id="tab5" type="radio" name="tabs">
+           <label for="tab5"><span>Progress</span></label>
+
+          </section>
+          
+          <section id="content2" class="tab-content nav Gallery-Content2">
+
+           <input id="tab6" type="radio" name="tabs">
+           <label for="tab6"><span>Asia</span></label>
+
+           <input id="tab6" type="radio" name="tabs">
+           <label for="tab6"><span>Europe</span></label>
+
+           <input id="tab7" type="radio" name="tabs">
+           <label for="tab7"><span>North America</span></label>
+
+           <input id="tab8" type="radio" name="tabs">
+           <label for="tab8"><span>South America</span></label>
+
+           <input id="tab9" type="radio" name="tabs">
+           <label for="tab9"><span>Africa</span></label>
+
+          </section>
+          
+          <section id="content6" class="tab-content nav Gallery-Content3">
+
+           <label><a href="#">Hong Kong</a></label>
+
+           <label><a href="#">Tibet</a></label>
+
+          </section>
+          
+          <section id="content3" class="tab-content nav AboutMe-Content2">
+
+           <section class="container">
+            <h1>HELLO</h1>
+            <p>My name is Sukh, people call me Sunny. I want to be a travel photographer and develop my photography skills as I go along with my journeys. I also want to take up videography and combine it with the skills I possess and use my Web Development knowledge to promot myself in the artistic field. My current portfolio is just something I took out of interest and wish to develop it further through the arts of editing.</p>
+            <h1>MY GEAR</h1>
+            <p>Canon EOS 700D</p>
+            <p>Canon EFS 18-55mm</p>
+           </section>
+
+          </section>
+          
+          <section id="content4" class="tab-content nav ContactMe-Content2">
+
+           <section class="container">
+            <h1>HELLO</h1>
+            <p>My name is Sukh, people call me Sunny. I want to be a travel photographer and develop my photography skills as I go along with my journeys. I have not visited many countries but plan to do so after my education. So far I have not taken many photographs but would love to explore more in this field. Any help of advice I can get or give will be beneficial, so my contact details are listed below.</p>
+            <h1>MY DETAILS</h1>
+            <p>Email: s.sunny_1995@hotmail.co.uk</p>
+            <p>Instagram: @sunnyshootsss</p>
+           </section>
+
+          </section>
+
+        </nav> <!-- end of navigation bar -->
+
+      </header>
+      
+      
+      <section class="jumbotron two text-center">
+
+       <div class="active page-header">
+
+        <h3>England</h3>
+        <h1>Coventry</h1>
+        <button type="button" class="btn btn-primary btn-lg">CHECK IT OUT</button>
+
+       </div>
+
+       <div class="hidden page-header">
+
+        <h3>Asia</h3>
+        <h1>Hong Kong</h1>
+        <button type="button" class="btn btn-primary btn-lg">CHECK IT OUT</button>
+
+       </div>
+
+      </section> <!-- end of jumbotron two -->
+
+      <a class="left-arrow pull-left"><span class="icon-left-arrow">left arrow</span></a>
+      <a class="right-arrow pull-right"><span class="icon-right-arrow">right arrow</span></a>  
+
+    </section> <!-- end of container -->
+   </section> <!-- end of jumbotron one -->
+    
+    
+   <section class="Plans">
+     
+    <section class="container">
+      
+     <h2>Future Plans ...</h2>
+        
+     <section class="row text-center">
+       
+      <section class="col-lg-3">
+       <section class="asia">
+        <span class="continent-icon asia">&nbsp;</span>
+        <p class="heading">Asia</p>
+       </section>
+      </section>
+       
+      <section class="col-lg-3">
+       <section class="europe">
+        <span class="continent-icon europe">&nbsp;</span>
+        <p class="heading">Europe</p>
+       </section>
+      </section>
+       
+      <section class="col-lg-3">
+       <section class="northAmerica">
+        <span class="continent-icon northamer">&nbsp;</span>
+        <p class="heading">North America</p>
+       </section>
+      </section>
+       
+      <section class="col-lg-3">
+       <section class="southAmerica">
+        <span class="continent-icon southamer">&nbsp;</span>
+        <p class="heading">South America</p>
+       </section>
+      </section>
+       
+      <section class="col-lg-3">
+       <section class="africa">
+         <span class="continent-icon africa">&nbsp;</span>
+         <p class="heading">Africa</p>
+       </section>
+      </section>
+         
+     </section>
+       
+    </section> <!-- end of container -->
+     
+   </section> <!-- end of Section Plans --> 
+    
+    
+   <section class="Albums">
+     
+    <section class="container-fluid">
+      
+     <section class="row text-center">
+
+      <section class="col-lg-3">
+        <h3 class="date">June, 2016</h3>
+        <h1>England</h1>
+       <section class="england">
+        <span class="album-image england">&nbsp;</span>
+        </section>
+      </section>
+
+      <section class="col-lg-3">
+        <h3 class="date">August, 2016</h3>
+        <h1>Hong Kong</h1>
+       <section class="hongkong">
+        <span class="album-image hongkong">&nbsp;</span>
+        </section>
+      </section>
+
+      <section class="col-lg-3">
+        <h3 class="date">Soon To Come ...</h3>
+        <h1>Germany</h1>
+       <section class="germany">
+        <span class="album-image germany">&nbsp;</span>
+        </section>
+      </section>
+
+      <section class="col-lg-3">
+        <h3 class="date">Soon To Come ...</h3>
+        <h1>Tibet</h1>
+       <section class="tibet">
+        <span class="album-image tibet">&nbsp;</span>
+        </section>
+      </section>
+
+      <section class="col-lg-3">
+        <h3 class="date">Soon To Come ...</h3>
+        <h1>Peru</h1>
+       <section class="peru">
+        <span class="album-image peru">&nbsp;</span>
+        </section>
+      </section>
+
+      <section class="countries_visited col-lg-3">
+        <h3>2</h3>
+        <h1>Countries Visited</h1>
+      </section>
+
+      <section class="year_of_travelling col-lg-3">
+        <h3>1</h3>
+        <h1>Years of Travelling</h1>
+      </section>
+
+      <section class="photos_taken col-lg-3">
+        <h3>53</h3>
+        <h1>Photos Taken</h1>
+      </section>
+
+     </section>
+     
+    <p class="text-center">Future Content Added Here ...</p>
+      
+    </section> <!-- end of container fluid -->
+     
+   </section> <!-- end of Section Albums -->
+    
+   
+   <footer>
+     
+    <section class="container">
+      
+     <section class="row">
+
+      <a class="pull-left" href="#" class="btn instagram"><span class="social-sprite instagram">&nbsp;</span>Check out my Insta</a>
+      <p class="text-center small copyright">&copy; Copyright <strong><a href="#">SunnyShoots</a></strong> 2016</p>
+
+     </section> 
+      
+    </section> <!-- end of container -->
+     
+   </footer> <!-- end of footer -->
+    
+    
+  </main>
+  
+  <!-- <section class="hongkong-flickr-images"></section>
+       <section class="england-flickr-images"></section> -->
+  
+  <script src="js/JSON-Flickr-Data.js"></script>
     
 </body>
     
