@@ -26,11 +26,11 @@
 
 @font-face {
   font-family: 'Museo300';
-  src: url('../fonts/Museo/Museo300.otf') format('truetype');
+  src: url('../fonts/Museo/Museo-300.otf') format('truetype');
 }
 @font-face {
   font-family: 'Museo500';
-  src: url('../fonts/Museo/Museo500.otf') format('truetype');
+  src: url('../fonts/Museo/Museo-500.otf') format('truetype');
 }
 @font-face {
   font-family: 'Museo700';

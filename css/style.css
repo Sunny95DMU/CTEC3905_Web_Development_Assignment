@@ -1,16 +1,13 @@
 h1 {
   font-family: 'MicroExtendFLF-Bold';
-  color: grey;
 }
 
 h2, h3 {
   font-family: 'FeaturedItem';
-  color: grey;
 }
 
 p {
   font-family: 'Museo700';
-  color: grey;
 }
 
 a {
@@ -34,7 +31,56 @@ footer .small, footer p a {
   padding-top: 0px;
   padding-bottom: 0px;
   margin-bottom: 0px;
-  background: url(../images/carousel_background/England_Carousel.jpg) no-repeat 50% top;
+  background: url(../images/carousel_background/England_Carousel.jpg) no-repeat 50% top fixed;
   background-size: cover;
+}
+
+.jumbotron.one header {
+  margin-top: 20px;
+}
+
+.jumbotron.one header .logo {
+  text-indent: -9999px;
+  width: 169px;
+  height: 40px;
+  background: url(../images/thumbnails/logo.gif) no-repeat;
+}
+
+.jumbotron.one header .open.menuHandler #menu {
+  font-size: 24px;
+  margin-left: 10px;
+  color: #fff;
+}
+
+.jumbotron.one header .open.menuHandler .icon-menu {
+  background: url(../images/icons/iconmonstr-menu-1-16.png) no-repeat;
+  width: 16px; 
+  height: 16px;
+  display: inline-block;
+}
+
+.jumbotron.two {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  background: inherit;
+}
+
+.jumbotron.two .page-header,  .jumbotron.two .page-header h3, .jumbotron.two .page-header h1 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+.jumbotron.two .page-header h3 {
+  margin-top: 20%;
+  margin-bottom: -20px;
+  font-size: 48px;
+  color: #fff;
+}
+
+.jumbotron.two .page-header h1 {
+  font-size: 72px;
+  color: #fff;
 }
 
