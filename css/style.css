@@ -1,0 +1,40 @@
+h1 {
+  font-family: 'MicroExtendFLF-Bold';
+  color: grey;
+}
+
+h2, h3 {
+  font-family: 'FeaturedItem';
+  color: grey;
+}
+
+p {
+  font-family: 'Museo700';
+  color: grey;
+}
+
+a {
+  font-family: 'TitilliumWeb-Bold';
+}
+
+footer a {
+  font-family: 'Museo300';
+  font-size: 18px;
+}
+
+footer .small, footer p a {
+  font-family: 'TitilliumWeb-Light';
+  font-size: 18px;
+}
+
+/* End of Font Family Setup */
+
+
+.jumbotron.one{
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  background: url(../images/carousel_background/England_Carousel.jpg) no-repeat 50% top;
+  background-size: cover;
+}
+
