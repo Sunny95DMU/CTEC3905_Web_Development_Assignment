@@ -41,6 +41,7 @@ footer p a {
 
 .main.container {
   padding: 0;
+  position: relative;
   border-radius: 0;
 }
 
@@ -52,6 +53,18 @@ footer p a {
 }
 
 /* End of Container */
+
+.header.container nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 400px;
+  height: 100%;
+  border-radius: 0;
+  overflow: scroll;
+}
+
+/* End of Nav */
 
 .header.container .container.one {
   position: fixed;
