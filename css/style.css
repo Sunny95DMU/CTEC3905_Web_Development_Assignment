@@ -127,3 +127,65 @@ footer .small, footer p a {
 /* End of Jumbotron One and Two */
 
 
+.Plans {
+  background-color: #3b3738;
+  color: #fdf3e7;
+}
+
+.Plans h2 {
+  margin-top: 30px;
+  margin-bottom: 0px;
+  font-size: 48px;
+}
+
+.Plans p {
+  margin-bottom: 0px;
+}
+
+.Plans .col-lg-3 {
+  margin-top: 6%;
+}
+
+.Plans .row.text-center:last-child {
+  margin-bottom: 30px;
+}
+
+.Plans .continent-icon {
+  width: 150px;
+  height: 150px;
+}
+
+.Plans .continent-icon.asia {
+  background: url(../images/thumbnails/asia.png) no-repeat;
+  background-size: 150px 150px;
+  margin: 0 auto;
+}
+
+.Plans .continent-icon.europe {
+  background: url(../images/thumbnails/europe.png) no-repeat;
+  background-size: 150px 150px;
+  margin: 0 auto;
+}
+
+.Plans .continent-icon.northamer {
+  background: url(../images/thumbnails/northamerica.png) no-repeat;
+  background-size: 150px 150px;
+  margin: 0 auto;
+}
+
+.Plans .continent-icon.southamer {
+  background: url(../images/thumbnails/southamerica.png) no-repeat;
+  background-size: 150px 150px;
+  margin: 0 auto;
+}
+
+.Plans .continent-icon.africa {
+  background: url(../images/thumbnails/africa.png) no-repeat;
+  background-size: 150px 150px;
+  margin: 0 auto;
+}
+
+.Plans p {
+  font-size: 30px;
+}
+
