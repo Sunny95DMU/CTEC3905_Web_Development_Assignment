@@ -43,7 +43,7 @@ footer .small, footer p a {
   text-indent: -9999px;
   width: 169px;
   height: 40px;
-  background: url(../images/thumbnails/logo.gif) no-repeat;
+  background: url(../images/thumbnails/logo.png) no-repeat;
 }
 
 .jumbotron.one header .open.menuHandler #menu {
@@ -70,6 +70,7 @@ footer .small, footer p a {
   margin-top: 0px;
   margin-bottom: 0px;
   padding-bottom: 0px;
+  border-bottom: none;
 }
 
 .jumbotron.two .page-header h3 {
@@ -83,4 +84,46 @@ footer .small, footer p a {
   font-size: 72px;
   color: #fff;
 }
+
+.jumbotron.two button {
+  font-family: 'TitilliumWeb-Bold';
+  margin-top: 7%;
+  margin-bottom: 15%;
+  width: 300px;
+  height: 50px;
+  border: 4px solid #fff;
+  background: inherit;
+}
+
+.jumbotron.two .btn-lg, .btn-group-lg > .btn {
+  padding: 10px 50px;
+  font-size: 30px;
+  line-height: 0px;
+  border-radius: 0px;
+}
+
+.jumbotron.two .left-arrow, .jumbotron.two .right-arrow {
+  margin-top: -35%;
+}
+
+.jumbotron.two .left-arrow {
+  display: inline-block;
+  text-indent: -9999px;
+  background: url(../images/misc/left_arrow.png) no-repeat;
+  background-size: 24px 24px;
+  width: 24px; 
+  height: 24px;
+}
+
+.jumbotron.two .right-arrow {
+  display: inline-block;
+  text-indent: -9999px;
+  background: url(../images/misc/right_arrow.png) no-repeat;
+  background-size: 24px 24px;
+  width: 24px; 
+  height: 24px;
+}
+
+/* End of Jumbotron One and Two */
+
 
