@@ -75,10 +75,65 @@ footer p a {
   position: fixed;
   top: 0;
   left: 0;
-  width: 400px;
+  width: 200px;
   height: 100%;
   border-radius: 0;
   overflow: scroll;
+  background-color: #575454;
+  z-index: 200;
+}
+
+.header.container .close.menuHandler {
+  position: absolute;
+  top: 10px;
+  left: 230px;
+}
+
+.header.container nav .state {
+  position: absolute;
+  left: -10000px;
+}
+
+.header.container .navbar-default {
+  background-image: none;
+}
+
+.header.container nav .tab {
+  display: inline-block;
+  width: 100%;
+  padding: 10px;
+  margin: 0px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.header.container nav .panel {
+  position: fixed;
+  top: 0px;
+  left: 200px;
+  width: 300px;
+  height: 100%;
+  border-radius: 0;
+  z-index: 200;
+  display: none;
+  overflow: hidden;
+}
+
+#home:checked ~ .header.container nav .tabs #home-tab,
+.header.container nav #gallery:checked ~ .header.container nav .tabs  #gallery-tab,
+.header.container nav #aboutme:checked ~ .header.container nav .tabs #aboutme-tab,
+.header.container nav #contactme:checked ~ .header.container nav .tabs #contactme-tab,
+.header.container nav #progress:checked ~ .header.container nav .tabs #progress-tab {
+  background-color: #fff;
+  cursor: default;
+}
+
+#home:checked ~ .tab-content.nav.panels #home-panel,
+.header.container nav #gallery:checked ~ .tab-content.nav.panels #gallery-panel,
+.header.container nav #aboutme:checked ~ .tab-content.nav.panels #aboutme-panel,
+.header.container nav #contactme:checked ~ .tab-content.nav.panels #contactme-panel,
+.header.container nav #progress:checked ~ .tab-content.nav.panels #progress-panel {
+  display: block;
 }
 
 /* End of Nav */

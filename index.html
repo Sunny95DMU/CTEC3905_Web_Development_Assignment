@@ -24,82 +24,84 @@
     
    <section class="header container">
      
-     <nav class="hidden navbar navbar-default">
+     <section class="nav closeMenu">
 
-       <section class="nav closeMenu">
-
-        <a class="close menuHandler" href="#"><span class="icon-remove"></span><span>Close</span></a>
-
-       </section>
-
-       <section class="nav Content">
-
-        <label><a href="#">Home</a></label>
-
-        <input id="tab2" type="radio" name="tabs">
-        <label for="tab2"><span>Gallery</span></label>
-
-        <input id="tab3" type="radio" name="tabs">
-        <label for="tab3"><span>About Me</span></label>
-
-        <input id="tab4" type="radio" name="tabs">
-        <label for="tab4"><span>Contact Me</span></label>
-
-        <input id="tab5" type="radio" name="tabs">
-        <label for="tab5"><span>Progress</span></label>
-
-       </section>
-
-       <section id="content2" class="tab-content nav Gallery-Content2">
-
-        <input id="tab6" type="radio" name="tabs">
-        <label for="tab6"><span>Asia</span></label>
-
-        <input id="tab6" type="radio" name="tabs">
-        <label for="tab6"><span>Europe</span></label>
-
-        <input id="tab7" type="radio" name="tabs">
-        <label for="tab7"><span>North America</span></label>
-
-        <input id="tab8" type="radio" name="tabs">
-        <label for="tab8"><span>South America</span></label>
-
-        <input id="tab9" type="radio" name="tabs">
-        <label for="tab9"><span>Africa</span></label>
-
-       </section>
-
-       <section id="content6" class="tab-content nav Gallery-Content3">
-
-        <label><a href="#">Hong Kong</a></label>
-
-        <label><a href="#">Tibet</a></label>
-
-       </section>
-
-    <section id="content3" class="tab-content nav AboutMe-Content2">
-
-      <section class="container">
-        <h1>HELLO</h1>
-        <p>My name is Sukh, people call me Sunny. I want to be a travel photographer and develop my photography skills as I go along with my journeys. I also want to take up videography and combine it with the skills I possess and use my Web Development knowledge to promot myself in the artistic field. My current portfolio is just something I took out of interest and wish to develop it further through the arts of editing.</p>
-        <h1>MY GEAR</h1>
-        <p>Canon EOS 700D</p>
-        <p>Canon EFS 18-55mm</p>
-      </section>
+      <a class="close menuHandler" href="#"><span class="icon-remove"></span><span>Close</span></a>
 
      </section>
+     
+     <nav class="navbar navbar-default">
 
-     <section id="content4" class="tab-content nav ContactMe-Content2">
+       
+       <input class="state" type="radio" title="Home" name="tab-navigation" id="home" />
+       <input class="state" type="radio" title="Gallery" name="tab-navigation" id="gallery" />
+       <input class="state" type="radio" title="About Me" name="tab-navigation" id="aboutme" />
+       <input class="state" type="radio" title="Contact Me" name="tab-navigation" id="contactme" />
+       <input class="state" type="radio" title="Progress" name="tab-navigation" id="progress" />
 
-       <section class="container">
-        <h1>HELLO</h1>
-        <p>My name is Sukh, people call me Sunny. I want to be a travel photographer and develop my photography skills as I go along with my journeys. I have not visited many countries but plan to do so after my education. So far I have not taken many photographs but would love to explore more in this field. Any help of advice I can get or give will be beneficial, so my contact details are listed below.</p>
-        <h1>MY DETAILS</h1>
-        <p>Email: s.sunny_1995@hotmail.co.uk</p>
-        <p>Instagram: @sunnyshootsss</p>
+       <section class="nav tabs Content">
+
+        <label for="home" id="home-tab" class="tab"><a href="#">Home</a></label>
+        <label for="gallery" id="gallery-tab" class="tab"><span>Gallery</span></label>
+        <label for="aboutme" id="aboutme-tab" class="tab"><span>About Me</span></label>
+        <label for="contactme" id="contactme-tab" class="tab"><span>Contact Me</span></label>
+        <label for="progress" id="progress-tab" class="tab"><span>Progress</span></label>
+
        </section>
 
-      </section>
+       <section class="tab-content nav panels">
+         
+        <section id="home-panel" class="tab-content nav panel">
+          <input id="tab6" type="radio" name="tabs">
+          <label for="tab6"><span>Asia</span></label>
+
+          <input id="tab6" type="radio" name="tabs">
+          <label for="tab6"><span>Europe</span></label>
+
+          <input id="tab7" type="radio" name="tabs">
+          <label for="tab7"><span>North America</span></label>
+
+          <input id="tab8" type="radio" name="tabs">
+          <label for="tab8"><span>South America</span></label>
+
+          <input id="tab9" type="radio" name="tabs">
+          <label for="tab9"><span>Africa</span></label>
+        </section>
+         
+        <section id="gallery-panel" class="tab-content nav panel">
+
+         <label><a href="#">Hong Kong</a></label>
+         <label><a href="#">Tibet</a></label>
+
+        </section>
+         
+        <section id="aboutme-panel" class="tab-content nav panel">
+          
+         <h1>HELLO</h1>
+         <p>My name is Sukh, people call me Sunny. I want to be a travel photographer and develop my photography skills as I go along with my journeys. I also want to take up videography and combine it with the skills I possess and use my Web Development knowledge to promot myself in the artistic field. My current portfolio is just something I took out of interest and wish to develop it further through the arts of editing.</p>
+         <h1>MY GEAR</h1>
+         <p>Canon EOS 700D</p>
+         <p>Canon EFS 18-55mm</p>
+          
+        </section>
+         
+        <section id="contactme-panel" class="tab-content nav panel">
+          
+         <h1>CONTACT ME</h1>
+         <p>My name is Sukh, people call me Sunny. I want to be a travel photographer and develop my photography skills as I go along with my journeys. I have not visited many countries but plan to do so after my education. So far I have not taken many photographs but would love to explore more in this field. Any help of advice I can get or give will be beneficial, so my contact details are listed below.</p>
+         <h1>MY DETAILS</h1>
+         <p>Email: s.sunny_1995@hotmail.co.uk</p>
+         <p>Instagram: @sunnyshootsss</p>
+          
+        </section>
+         
+        <section id="progress-panel" class="tab-content nav panel">
+          
+         
+          
+        </section>
+
+       </section>
 
      </nav> <!-- end of navigation bar -->
         
