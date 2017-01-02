@@ -55,6 +55,20 @@ footer p a {
   background-position: top; 
 }
 
+.header.container.england {
+  padding: 0;
+  background: url(../images/carousel_background/England_Carousel.jpg) no-repeat fixed; 
+  background-size: 100% auto;
+  background-position: top; 
+}
+
+.header.container.hongkong {
+  padding: 0;
+  background: url(../images/carousel_background/HK_Carousel.jpg) no-repeat fixed; 
+  background-size: 100% auto;
+  background-position: top; 
+}
+
 /* End of Container */
 
 .header.container nav {
@@ -71,6 +85,7 @@ footer p a {
 
 .header.container .container.one {
   position: fixed;
+  z-index: 100;
   margin-top: 20px;
 }
 
@@ -82,9 +97,10 @@ footer p a {
 }
 
 .header.container .container.one #menu {
-    font-size: 1.5em;
-    margin-left: 5px;
-    color: #fff;
+ font-size: 1.5em;
+ margin-left: 5px;
+ color: #fff;
+ text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3); 
 }
 
 .header.container .container.one .icon-menu {
@@ -110,6 +126,7 @@ footer p a {
   margin-bottom: -15px;
   font-size: 3em;
   color: #fff;
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3); 
 }
 
 .header.container .container.two h1 {
@@ -117,6 +134,7 @@ footer p a {
   margin-bottom: 0px;
   font-size: 4.5em;
   color: #fff;
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3); 
 }
 
 .header.container .container.two button {
@@ -153,6 +171,10 @@ footer p a {
   height: 24px;
   background: url(../images/misc/right_arrow.png) no-repeat;
   background-size: 24px 24px;
+}
+
+.header.container .container.two .margin.bottom.content {
+  margin-bottom: 20%;
 }
 
 /* End of Header Container Section */
@@ -220,5 +242,118 @@ footer p a {
   font-size: 1.875em;
 }
 
+/* End of Header Plans */
 
+.Albums {
+  background-color: #3b3738;
+  color: #fff;
+}
+
+.Albums .container-fluid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.Albums .item {
+  width: 25%;
+  position: relative;
+}
+
+.Albums .item.info {
+  border-right: 1px solid #fff;
+  background-color: #575454;
+}
+
+.Albums .item.info:last-of-type {
+  border: none;
+}
+
+.Albums p.item {
+  width: 25%;
+}
+
+.Albums img {
+  width: 100%;
+  height: 100%;
+}
+
+.Albums h1 {
+  position: absolute;
+  top: 140px;
+  width: 100%;
+  text-align: center;
+}
+
+.Albums h3 {
+  position: absolute;
+  top: 120px;
+  width: 100%;
+  text-align: center;
+}
+
+.Albums h1 {
+  font-size: 1.875em;
+}
+
+.Albums h3 {
+  font-size: 1.25em;
+}
+
+.Albums p {
+  margin-top: 20%;
+  margin-bottom: 20%;
+  font-size: 1.5em;
+  color: #575454;
+}
+
+/* End of Albums */
+
+footer {
+  padding: 5% 0;
+  background-color: #252323;
+}
+
+footer .container .row {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+footer .container .row a, footer .container .row p {
+  margin: 0;
+  color: #fdf3e7;
+}
+
+footer .container .row .btn.instagram span {
+  margin-right: 10px;
+}
+
+footer .container .row p a {
+  color: #575454;
+}
+
+footer .container .row .btn.instagram {
+  background-color: #875c28;
+  padding: 13px 10px;
+}
+
+footer .container .row .social-sprite.instagram {
+  text-indent: -1000px;
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  background: url(../images/icons/iconmonstr-instagram-1-24.png) no-repeat;
+  background-size: 16px 16px;
+}
+
+footer .container .row p {
+  display: inline-block;
+  width: 85.8%;
+  text-align: center;
+}
+
+/* End of Footer */
 

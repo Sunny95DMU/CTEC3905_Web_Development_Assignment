@@ -39,7 +39,9 @@
         let section = document.createElement("section");
           
         img.src = img_src;
-        section.setAttribute("class", "col-lg-3");
+        img.style.width = "100%";
+        img.style.height = "100%";
+        section.setAttribute("class", "item");
           
         section.appendChild(img);
         galleryContainer.appendChild(section);
