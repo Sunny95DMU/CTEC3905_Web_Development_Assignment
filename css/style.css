@@ -43,6 +43,9 @@ footer p a {
   padding: 0;
   position: relative;
   border-radius: 0;
+  scroll-snap-points-x: repeat(100%);
+  scroll-snap-type: mandatory;
+  scroll-snap-destination: 50% 50%;
 }
 
 .header.container {
