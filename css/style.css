@@ -270,8 +270,22 @@ footer p a {
   line-height: 0;
 }
 
+.header.container .container.two a {
+  display: block;
+  width: 40px;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  margin-top: 0px;
+  font-size: 25px;
+  text-align: center;
+  color: #ffffff;
+  cursor: pointer;
+  z-index: 20;
+}
+
 .header.container .container.two .icon-left-arrow, .header.container .container.two .icon-right-arrow {
-    margin-top: -25%;
+  margin-top: -25%;
 }
 
 .header.container .container.two .icon-left-arrow {
