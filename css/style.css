@@ -50,22 +50,22 @@ footer p a {
 
 .header.container {
   padding: 0;
-  background: url(../images/carousel_background/England_Carousel.jpg) no-repeat fixed; 
-  background-size: 100% auto;
-  background-position: top; 
+  background: url(../images/carousel_background/England_Carousel.jpg) no-repeat;
+  background-size: cover;
+  background-position: top;
 }
 
 .header.container.england {
   padding: 0;
-  background: url(../images/carousel_background/England_Carousel.jpg) no-repeat fixed; 
-  background-size: 100% auto;
+  background: url(../images/carousel_background/England_Carousel.jpg) no-repeat; 
+  background-size: cover;
   background-position: top; 
 }
 
 .header.container.hongkong {
   padding: 0;
-  background: url(../images/carousel_background/HK_Carousel.jpg) no-repeat fixed; 
-  background-size: 100% auto;
+  background: url(../images/carousel_background/HK_Carousel.jpg); 
+  background-size: cover;
   background-position: top; 
 }
 
@@ -164,7 +164,7 @@ footer p a {
   padding: 20px;
 }
 
-.header.container nav#aboutme-panel h1, .header.container nav #contactme-panel h1 {
+.header.container nav #aboutme-panel h1, .header.container nav #contactme-panel h1 {
   font-family: "MicroExtendFLF-Bold";
   font-size: 1.125em;
 }
@@ -493,10 +493,6 @@ footer .container .row p {
 /* End of Footer */
 
 @media (min-width : 200px) and (max-width : 480px) {
-
-.header.container, .header.container.england, .header.container.hongkong {
-  background-size: 100% 35%;
-}
     
 .header.container .container.one {
   padding: 0 5px;
@@ -637,10 +633,6 @@ footer .container .row p {
 }
 
 @media (min-width : 480px) and (max-width : 1024px) {
-
-.header.container, .header.container.england, .header.container.hongkong {
-  background-size: 100% 40%;
-}
     
 .header.container .container.one {
   padding: 0 5px;
@@ -780,10 +772,6 @@ footer .container .row p {
 }
 
 @media (min-width : 1024px) and (max-width : 1224px) {
-  
-.header.container, .header.container.england, .header.container.hongkong {
-  background-size: 100% 45%;
-}
     
 .header.container .container.two .icon-left-arrow, .header.container .container.two .icon-right-arrow {
   margin-top: -30%;
@@ -856,11 +844,7 @@ footer .container .row p {
 }
 
 @media (min-width : 1224px) and (max-width : 1824px) {
-    
-.header.container, .header.container.england, .header.container.hongkong {
-  background-size: 100% 55%;
-}
-    
+      
 .header.container .container.two .icon-left-arrow, .header.container .container.two .icon-right-arrow {
   margin-top: -30%;
 }
@@ -926,6 +910,8 @@ footer .container .row p {
     
     
 }
+
+
 
 
 
