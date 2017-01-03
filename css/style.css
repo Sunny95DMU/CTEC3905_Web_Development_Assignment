@@ -372,7 +372,7 @@ footer p a {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
   padding-left: 0px;
   padding-right: 0px;
 }
@@ -380,6 +380,10 @@ footer p a {
 .Albums .item {
   width: 25%;
   position: relative;
+}
+
+.Albums .item.info {
+  position: static;
 }
 
 .Albums .item.info {
@@ -414,6 +418,17 @@ footer p a {
   text-align: center;
 }
 
+.Albums .item.info h1 {
+  position: static;
+  margin-top: 10px;
+  margin-bottom: 15%;
+}
+
+.Albums .item.info h3 {
+  position: static;
+  margin-top: 21%;
+}
+
 .Albums h1 {
   font-size: 1.875em;
 }
@@ -423,6 +438,7 @@ footer p a {
 }
 
 .Albums p {
+  width: 100%;
   margin-top: 20%;
   margin-bottom: 20%;
   font-size: 1.5em;
@@ -475,4 +491,442 @@ footer .container .row p {
 }
 
 /* End of Footer */
+
+@media (min-width : 200px) and (max-width : 480px) {
+
+.header.container, .header.container.england, .header.container.hongkong {
+  background-size: 100% 35%;
+}
+    
+.header.container .container.one {
+  padding: 0 5px;
+}
+
+.header.container .container.one .logo {
+  text-indent: -9999px;
+  width: 150px;
+  height: 30px;
+  background: url(../images/thumbnails/logo.png) no-repeat;
+  background-size: 150px 30px;
+}
+    
+.header.container .container.two {
+  padding: 0px 5px;
+}
+
+.header.container .container.two h3 {
+  margin-top: 35%;
+  margin-bottom: -9px;
+  font-size: 2em;
+}
+
+.header.container .container.two h1 {
+  font-size: 2.5em;
+}
+
+.header.container .container.two button {
+  font-size: 0.938em;
+  width: 150px;
+  height: 25px;
+}
+
+.header.container .container.two .icon-left-arrow, .header.container .container.two .icon-right-arrow {
+  margin-top: -25%;
+}
+
+.header.container .container.two .icon-left-arrow {
+  width: 16px;
+  height: 16px;
+  background-size: 16px 16px;
+}
+
+.header.container .container.two .icon-right-arrow {
+  width: 16px;
+  height: 16px;
+  background-size: 16px 16px;
+}
+
+/* End of Header */
+
+.Plans h2 {
+  font-size: 2.5em;
+}
+
+.Plans .col-lg-3 {
+  margin-top: 20%;
+}
+
+/* End of Plans */
+    
+.Albums .item {
+  width: 100%;
+}
+
+.Albums .item.info {
+  border-right: none;
+}
+
+.Albums h1 {
+  top: 34%;
+}
+
+.Albums h3 {
+  top: 20%;
+}
+
+.Albums h1 {
+  font-size: 2em;
+}
+
+.Albums h3 {
+  font-size: 1.5em;
+}
+    
+.Albums .item.info h1 {
+  margin-top: 10px;
+  margin-bottom: 13%;
+}
+
+.Albums .item.info h3 {
+  margin-top: 19%;
+}
+
+.Albums p {
+  font-size: 1em;
+}
+    
+.Albums {
+  background-color: #3b3738;
+  color: #fff;
+}
+    
+/* End of Albums */   
+
+footer .container .row {
+  padding: 0px 5px;
+}
+    
+footer .container .row a {
+  text-align: center;
+  display: block;
+}
+    
+footer .container .row p a {
+  display: inline;
+}
+
+footer .container .row .btn.instagram {
+  padding: 10px 7px;
+}
+
+footer .container .row .social-sprite.instagram {
+  width: 16px;
+  height: 16px;
+  background-size: 16px 16px;
+}
+
+footer .container .row p {
+  display: inline-block;
+  margin-top: 5%;
+  width: 100%;
+  text-align: center;
+}
+
+/* End of Footer */
+
+}
+
+@media (min-width : 480px) and (max-width : 1024px) {
+
+.header.container, .header.container.england, .header.container.hongkong {
+  background-size: 100% 40%;
+}
+    
+.header.container .container.one {
+  padding: 0 5px;
+}
+
+.header.container .container.one .logo {
+  text-indent: -9999px;
+  width: 150px;
+  height: 30px;
+  background: url(../images/thumbnails/logo.png) no-repeat;
+  background-size: 150px 30px;
+}
+    
+.header.container .container.two {
+  padding: 0px 5px;
+}
+
+.header.container .container.two h3 {
+  margin-top: 35%;
+  font-size: 2.5em;
+}
+
+.header.container .container.two h1 {
+  font-size: 3.5em;
+}
+
+.header.container .container.two button {
+  font-size: 1.3em;
+  width: 200px;
+  height: 30px;
+}
+
+.header.container .container.two .icon-left-arrow, .header.container .container.two .icon-right-arrow {
+  margin-top: -20%;
+}
+
+.header.container .container.two .icon-left-arrow {
+  width: 16px;
+  height: 16px;
+  background-size: 16px 16px;
+}
+
+.header.container .container.two .icon-right-arrow {
+  width: 16px;
+  height: 16px;
+  background-size: 16px 16px;
+}
+
+/* End of Header */
+    
+.Plans h2 {
+  font-size: 2.5em;
+}
+
+.Plans .col-lg-3 {
+  margin-top: 10%;
+}
+
+/* End of Plans */
+    
+.Albums .item {
+  width: 100%;
+}
+
+.Albums .item.info {
+  border-right: none;
+}
+
+.Albums h1 {
+  top: 45%;
+}
+
+.Albums h3 {
+  top: 38%;
+}
+
+.Albums h1 {
+  font-size: 2.3em;
+}
+
+.Albums h3 {
+  font-size: 1.8em;
+}
+    
+.Albums .item.info h1 {
+  margin-top: 10px;
+  margin-bottom: 13%;
+}
+
+.Albums .item.info h3 {
+  margin-top: 19%;
+}
+
+.Albums p {
+  font-size: 1.3em;
+}
+    
+.Albums {
+  background-color: #3b3738;
+  color: #fff;
+}
+    
+/* End of Albums */ 
+    
+footer .container .row {
+  padding: 0px 5px;
+}
+    
+footer .container .row a {
+  text-align: center;
+  display: block;
+}
+    
+footer .container .row p a {
+  display: inline;
+}
+
+footer .container .row .btn.instagram {
+  padding: 10px 7px;
+}
+
+footer .container .row .social-sprite.instagram {
+  width: 16px;
+  height: 16px;
+  background-size: 16px 16px;
+}
+
+footer .container .row p {
+  display: inline-block;
+  margin-top: 1%;
+  width: 100%;
+  text-align: center;
+}
+
+/* End of Footer */
+    
+}
+
+@media (min-width : 1024px) and (max-width : 1224px) {
+  
+.header.container, .header.container.england, .header.container.hongkong {
+  background-size: 100% 45%;
+}
+    
+.header.container .container.two .icon-left-arrow, .header.container .container.two .icon-right-arrow {
+  margin-top: -30%;
+}
+    
+/* End of Header */
+    
+.Plans h2 {
+  font-size: 2.5em;
+}
+
+.Plans .col-lg-3 {
+  margin-top: 10%;
+}
+    
+/* End of Plans */
+    
+.Albums .item {
+  width: 50%;
+}
+
+.Albums .item.info {
+  border-right: none;
+}
+
+.Albums h1 {
+  top: 40%;
+}
+
+.Albums h3 {
+  top: 32%;
+}
+
+.Albums h1 {
+  font-size: 2em;
+}
+
+.Albums h3 {
+  font-size: 1.5em;
+}
+    
+.Albums .item.info h1 {
+  margin-top: 10px;
+  margin-bottom: 16%;
+}
+
+.Albums .item.info h3 {
+  margin-top: 16%;
+}
+
+.Albums p {
+  font-size: 2em;
+}
+    
+/* End of Albums */
+    
+footer .container .row .btn.instagram {
+  padding: 10px 9px;
+}
+    
+footer .container .row p {
+  display: inline-block;
+  margin-top: 1%;
+  width: 79.5%;
+  text-align: center;
+}
+    
+/* End of Footer */
+    
+}
+
+@media (min-width : 1224px) and (max-width : 1824px) {
+    
+.header.container, .header.container.england, .header.container.hongkong {
+  background-size: 100% 55%;
+}
+    
+.header.container .container.two .icon-left-arrow, .header.container .container.two .icon-right-arrow {
+  margin-top: -30%;
+}
+    
+/* End of Header */
+    
+.Albums .item {
+  width: 33.3%;
+}
+
+.Albums .item.info {
+  border-right: 1px solid #fff;
+}
+
+.Albums h1 {
+  top: 40%;
+}
+
+.Albums h3 {
+  top: 32%;
+}
+
+.Albums h1 {
+  font-size: 2em;
+}
+
+.Albums h3 {
+  font-size: 1.5em;
+}
+    
+.Albums .item.info h1 {
+  margin-top: 10px;
+  margin-bottom: 16%;
+}
+
+.Albums .item.info h3 {
+  margin-top: 16%;
+}
+
+.Albums p {
+  font-size: 2em;
+}
+    
+/* End of Albums */
+    
+footer {
+  padding: 5% 0;
+  background-color: #252323;
+}
+    
+footer .container .row .btn.instagram {
+  padding: 10px 9px;
+}
+    
+footer .container .row p {
+  display: inline-block;
+  margin-top: 1%;
+  width: 79.5%;
+  text-align: center;
+}
+    
+/* End of Footer */
+    
+    
+}
+
+
+
 
