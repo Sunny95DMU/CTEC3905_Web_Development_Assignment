@@ -38,43 +38,59 @@
        <input class="state" type="radio" title="About Me" name="tab-navigation" id="aboutme" />
        <input class="state" type="radio" title="Contact Me" name="tab-navigation" id="contactme" />
        <input class="state" type="radio" title="Progress" name="tab-navigation" id="progress" />
+         
+       <input class="state" type="radio" title="Asia" name="tab-navigation" id="asia" />
+       <input class="state" type="radio" title="Europe" name="tab-navigation" id="europe" />
+       <input class="state" type="radio" title="North America" name="tab-navigation" id="northamerica" />
+       <input class="state" type="radio" title="South America" name="tab-navigation" id="southamerica" />
+       <input class="state" type="radio" title="Africa" name="tab-navigation" id="africa" />
 
        <section class="nav tabs Content">
 
-        <label for="home" id="home-tab" class="tab"><a href="#">Home</a></label>
-        <label for="gallery" id="gallery-tab" class="tab"><span>Gallery</span></label>
-        <label for="aboutme" id="aboutme-tab" class="tab"><span>About Me</span></label>
-        <label for="contactme" id="contactme-tab" class="tab"><span>Contact Me</span></label>
-        <label for="progress" id="progress-tab" class="tab"><span>Progress</span></label>
+        <label for="home" id="home-tab" class="tab"><a href="#">HOME</a></label>
+        <label for="gallery" id="gallery-tab" class="tab"><span>GALLERY</span></label>
+        <label for="aboutme" id="aboutme-tab" class="tab"><span>ABOUT ME</span></label>
+        <label for="contactme" id="contactme-tab" class="tab"><span>CONTACT ME</span></label>
+        <label for="progress" id="progress-tab" class="tab"><span>PROGRESS</span></label>
 
        </section>
 
        <section class="tab-content nav panels">
          
-        <section id="home-panel" class="tab-content nav panel">
-          <input id="tab6" type="radio" name="tabs">
-          <label for="tab6"><span>Asia</span></label>
-
-          <input id="tab6" type="radio" name="tabs">
-          <label for="tab6"><span>Europe</span></label>
-
-          <input id="tab7" type="radio" name="tabs">
-          <label for="tab7"><span>North America</span></label>
-
-          <input id="tab8" type="radio" name="tabs">
-          <label for="tab8"><span>South America</span></label>
-
-          <input id="tab9" type="radio" name="tabs">
-          <label for="tab9"><span>Africa</span></label>
-        </section>
-         
         <section id="gallery-panel" class="tab-content nav panel">
-
-         <label><a href="#">Hong Kong</a></label>
-         <label><a href="#">Tibet</a></label>
+            
+         <label for="asia" id="asia-tab" class="tab"><a href="#">ASIA</a></label>
+         <label for="europe" id="europe-tab" class="tab"><a href="#">EUROPE</a></label>
+         <label for="northamerica" id="northamerica-tab" class="tab"><a href="#">NORTH AMERICA</a></label>
+         <label for="southamerica" id="southamerica-tab" class="tab"><a href="#">SOUTH AMERICA</a></label>
+         <label for="africa" id="africa-tab" class="tab"><a href="#">AFRICA</a></label>
 
         </section>
-         
+           
+        <section id="asia-panel" class="tab-content nav panel second">
+            
+         <label><a href="#">HONG KONG</a></label>
+         <label><a href="#">TIBET</a></label>
+
+        </section>
+           
+        <section id="europe-panel" class="tab-content nav panel second">
+            
+         <label><a href="#">ENGLAND</a></label>
+         <label><a href="#">GERMANY</a></label>
+
+        </section>
+           
+        <section id="northamerica-panel" class="tab-content nav panel second"></section>
+           
+        <section id="southamerica-panel" class="tab-content nav panel second">
+           
+          <label><a href="#">PERU</a></label>
+            
+        </section>
+           
+        <section id="africa-panel" class="tab-content nav panel second"></section>
+           
         <section id="aboutme-panel" class="tab-content nav panel">
           
          <h1>HELLO</h1>
@@ -97,7 +113,6 @@
          
         <section id="progress-panel" class="tab-content nav panel">
           
-         
           
         </section>
 
@@ -116,21 +131,21 @@
 
      <header id="Carousel" class="carousel slide">
         
-      <div class="active page-header page-header-england">
+      <section class="active page-header page-header-england">
 
        <h3>England</h3>
        <h1>Coventry</h1>
        <button type="button" class="btn btn-primary btn-lg">CHECK IT OUT</button>
 
-      </div>
+      </section>
 
-      <div class="hidden page-header page-header-hongkong">
+      <section class="hidden page-header page-header-hongkong">
 
        <h3>Asia</h3>
        <h1>Hong Kong</h1>
        <button type="button" class="btn btn-primary btn-lg">CHECK IT OUT</button>
 
-      </div>
+      </sectopm>
         
      </header>
 
@@ -268,6 +283,8 @@
   
   <!-- <section class="hongkong-flickr-images"></section>
        <section class="england-flickr-images"></section> -->
+    
+  <script src="js/navCheckbox.js"></script>
     
 </body>
     

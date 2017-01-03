@@ -75,18 +75,31 @@ footer p a {
   position: fixed;
   top: 0;
   left: 0;
-  width: 200px;
+  width: 10%;
   height: 100%;
   border-radius: 0;
-  overflow: scroll;
+  overflow: hidden;
+  border: none;
+  font-family: "TitilliumWeb-Bold";
+  font-size: 1.5em;
+  color: #fff;
   background-color: #575454;
   z-index: 200;
 }
 
 .header.container .close.menuHandler {
-  position: absolute;
+  position: fixed;
   top: 10px;
-  left: 230px;
+  left: 11%;
+}
+
+.header.container .close.menuHandler .icon-remove {
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;
+  display: inline-block;
+  background: url(../images/icons/iconmonstr-x-mark-1-16.png) no-repeat;
+  background-size: 16px 16px;
 }
 
 .header.container nav .state {
@@ -107,33 +120,84 @@ footer p a {
   cursor: pointer;
 }
 
+.header.container nav label {
+  display: inline-block;
+  border-bottom: 1px solid #fff;
+  width: 100%;
+  padding: 10px;
+  margin: 0px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.header.container nav label:hover {
+  background-color: yellow;
+}
+
 .header.container nav .panel {
   position: fixed;
   top: 0px;
-  left: 200px;
-  width: 300px;
+  left: 10%;
+  width: 20%;
   height: 100%;
   border-radius: 0;
   z-index: 200;
   display: none;
   overflow: hidden;
+  background-color: #3b3738;
 }
 
-#home:checked ~ .header.container nav .tabs #home-tab,
-.header.container nav #gallery:checked ~ .header.container nav .tabs  #gallery-tab,
-.header.container nav #aboutme:checked ~ .header.container nav .tabs #aboutme-tab,
-.header.container nav #contactme:checked ~ .header.container nav .tabs #contactme-tab,
-.header.container nav #progress:checked ~ .header.container nav .tabs #progress-tab {
-  background-color: #fff;
-  cursor: default;
+.header.container nav .panel.second {
+  position: fixed;
+  top: 0px;
+  left: 30%;
+  width: 10%;
+  height: 100%;
+  border-radius: 0;
+  z-index: 200;
+  display: none;
+  overflow: hidden;
+  background-color: #252323;
 }
 
-#home:checked ~ .tab-content.nav.panels #home-panel,
+.header.container nav #aboutme-panel, .header.container nav #contactme-panel {
+  padding: 20px;
+}
+
+.header.container nav#aboutme-panel h1, .header.container nav #contactme-panel h1 {
+  font-family: "MicroExtendFLF-Bold";
+  font-size: 1.125em;
+}
+
+.header.container nav #aboutme-panel p, .header.container nav #contactme-panel p {
+  font-family: "Museo300";
+  font-size: 0.875em;
+}
+
+.header.container nav #home:checked ~ .tab-content.nav.panels #home-panel,
 .header.container nav #gallery:checked ~ .tab-content.nav.panels #gallery-panel,
 .header.container nav #aboutme:checked ~ .tab-content.nav.panels #aboutme-panel,
 .header.container nav #contactme:checked ~ .tab-content.nav.panels #contactme-panel,
-.header.container nav #progress:checked ~ .tab-content.nav.panels #progress-panel {
+.header.container nav #progress:checked ~ .tab-content.nav.panels #progress-panel,
+.header.container nav #asia:checked ~ .tab-content.nav.panels #asia-panel,
+.header.container nav #europe:checked ~ .tab-content.nav.panels #europe-panel,
+.header.container nav #northamerica:checked ~ .tab-content.nav.panels #northamerica-panel,
+.header.container nav #southamerica:checked ~ .tab-content.nav.panels #southamerica-panel,
+.header.container nav #africa:checked ~ .tab-content.nav.panels #africa-panel {
   display: block;
+}
+
+.header.container nav #gallery-panel.active {
+  position: fixed;
+  top: 0px;
+  left: 10%;
+  width: 20%;
+  height: 100%;
+  border-radius: 0;
+  z-index: 200;
+  display: block;
+  overflow: hidden;
+  background-color: #3b3738;
 }
 
 /* End of Nav */
