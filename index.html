@@ -24,13 +24,13 @@
     
    <section class="header container">
      
-     <section class="hidden nav closeMenu">
+     <section id="closeMenu" class="nav closeMenu hidden">
 
       <a class="close menuHandler" href="#"><span class="icon-remove"></span><span>Close</span></a>
 
      </section>
      
-     <nav class="hidden navbar navbar-default">
+     <nav id="navbar" class="navbar navbar-default hidden">
 
        
        <input class="state" type="radio" title="Home" name="tab-navigation" id="home" />
@@ -47,7 +47,7 @@
 
        <section class="nav tabs Content">
 
-        <label for="home" id="home-tab" class="tab"><a href="#">HOME</a></label>
+        <label for="home" id="home-tab" class="tab"><a href="index.html">HOME</a></label>
         <label for="gallery" id="gallery-tab" class="tab"><span>GALLERY</span></label>
         <label for="aboutme" id="aboutme-tab" class="tab"><span>ABOUT ME</span></label>
         <label for="contactme" id="contactme-tab" class="tab"><span>CONTACT ME</span></label>
@@ -59,24 +59,24 @@
          
         <section id="gallery-panel" class="tab-content nav panel">
             
-         <label for="asia" id="asia-tab" class="tab"><a href="#">ASIA</a></label>
-         <label for="europe" id="europe-tab" class="tab"><a href="#">EUROPE</a></label>
-         <label for="northamerica" id="northamerica-tab" class="tab"><a href="#">NORTH AMERICA</a></label>
-         <label for="southamerica" id="southamerica-tab" class="tab"><a href="#">SOUTH AMERICA</a></label>
-         <label for="africa" id="africa-tab" class="tab"><a href="#">AFRICA</a></label>
+         <label for="asia" id="asia-tab" class="tab">ASIA</label>
+         <label for="europe" id="europe-tab" class="tab">EUROPE</label>
+         <label for="northamerica" id="northamerica-tab" class="tab">NORTH AMERICA</label>
+         <label for="southamerica" id="southamerica-tab" class="tab">SOUTH AMERICA</label>
+         <label for="africa" id="africa-tab" class="tab">AFRICA</label>
 
         </section>
            
         <section id="asia-panel" class="tab-content nav panel second">
             
-         <label><a href="#">HONG KONG</a></label>
+         <label><a href="pages/hongkong.html">HONG KONG</a></label>
          <label><a href="#">TIBET</a></label>
 
         </section>
            
         <section id="europe-panel" class="tab-content nav panel second">
             
-         <label><a href="#">ENGLAND</a></label>
+         <label><a href="pages/england.html">ENGLAND</a></label>
          <label><a href="#">GERMANY</a></label>
 
         </section>
@@ -120,9 +120,9 @@
 
      </nav> <!-- end of navigation bar -->
         
-    <header class="container one">
+    <header id="menu-container" class="container one">
 
-      <a class="open menuHandler" href="#"><section class="icon-menu"></section><span id="menu">MENU</span></a>
+      <a id="openMenu" class="open menuHandler" href="#"><section class="icon-menu"></section><span id="menu">MENU</span></a>
       <a class="pull-right" href="#"><section class="logo"></section></a>
 
     </header> <!-- end of container one -->
@@ -135,7 +135,7 @@
 
        <h3>England</h3>
        <h1>Coventry</h1>
-       <button type="button" class="btn btn-primary btn-lg">CHECK IT OUT</button>
+       <a id="btn-checkout" href="pages/england.html">CHECK IT OUT</a>
 
       </section>
 
@@ -143,7 +143,7 @@
 
        <h3>Asia</h3>
        <h1>Hong Kong</h1>
-       <button type="button" class="btn btn-primary btn-lg">CHECK IT OUT</button>
+       <a id="btn-checkout" href="pages/hongkong.html">CHECK IT OUT</a>
 
       </sectopm>
         
@@ -241,6 +241,24 @@
         <img src="images/carousel_background/Peru_Carousel.jpg" />
       </section>
       
+      <section class="item turkey">
+        <h3 class="date">Soon To Come ...</h3>
+        <h1>Turkey</h1>
+        <img src="images/carousel_background/Turkey_Carousel.jpg" />
+      </section>
+      
+      <section class="item turkey">
+        <h3 class="date">Soon To Come ...</h3>
+        <h1>Italy</h1>
+        <img src="images/carousel_background/Italy_Carousel.jpg" />
+      </section>
+      
+      <section class="item turkey">
+        <h3 class="date">Soon To Come ...</h3>
+        <h1>Thailand</h1>
+        <img src="images/carousel_background/Thailand_Carousel.jpg" />
+      </section>
+      
       
     </section> <!-- end of container fluid -->
      
@@ -288,6 +306,7 @@
   </main>
     
   <script src="js/navCheckbox.js"></script>
+  <script src="js/navigationOpenClose.js"></script>
     
 </body>
     

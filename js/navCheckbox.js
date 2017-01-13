@@ -16,15 +16,21 @@
        
        let target = getTarget(e);
        let galleryID = document.getElementById("gallery-panel");
-       
-       console.log("Working");
+      
+       galleryID.className = "tab-content nav panel";
        
        if(target.id == "asia-tab" || target.id == "europe-tab" || target.id == "northamerica-tab" || target.id == "southamerica-tab" ||  target.id == "africa-tab") {
            
-         console.log("Target: " + e.target);
-         galleryID.className = "active";
+         galleryID.className += " active";
+         
+         let tab_nav = document.getElementsByName("tab-navigation");
+         
+         for(var i=0;i<tab_nav.length;i++)
+          tab_nav[i].checked = false;
            
-       } 
+         }else {
+          galleryID.className = "tab-content nav panel";
+         }
    
    }
     

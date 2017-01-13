@@ -24,13 +24,13 @@
     
    <section class="header container england">
      
-     <section class="hidden nav closeMenu">
+     <section id="closeMenu" class="hidden nav closeMenu">
 
       <a class="close menuHandler" href="#"><span class="icon-remove"></span><span>Close</span></a>
 
      </section>
      
-     <nav class="hidden navbar navbar-default">
+     <nav id="navbar" class="hidden navbar navbar-default">
 
        
        <input class="state" type="radio" title="Home" name="tab-navigation" id="home" />
@@ -47,7 +47,7 @@
 
        <section class="nav tabs Content">
 
-        <label for="home" id="home-tab" class="tab"><a href="#">HOME</a></label>
+        <label for="home" id="home-tab" class="tab"><a href="../index.html">HOME</a></label>
         <label for="gallery" id="gallery-tab" class="tab"><span>GALLERY</span></label>
         <label for="aboutme" id="aboutme-tab" class="tab"><span>ABOUT ME</span></label>
         <label for="contactme" id="contactme-tab" class="tab"><span>CONTACT ME</span></label>
@@ -59,24 +59,24 @@
          
         <section id="gallery-panel" class="tab-content nav panel">
             
-         <label for="asia" id="asia-tab" class="tab"><a href="#">ASIA</a></label>
-         <label for="europe" id="europe-tab" class="tab"><a href="#">EUROPE</a></label>
-         <label for="northamerica" id="northamerica-tab" class="tab"><a href="#">NORTH AMERICA</a></label>
-         <label for="southamerica" id="southamerica-tab" class="tab"><a href="#">SOUTH AMERICA</a></label>
-         <label for="africa" id="africa-tab" class="tab"><a href="#">AFRICA</a></label>
+         <label for="asia" id="asia-tab" class="tab">ASIA</label>
+         <label for="europe" id="europe-tab" class="tab">EUROPE</label>
+         <label for="northamerica" id="northamerica-tab" class="tab">NORTH AMERICA</label>
+         <label for="southamerica" id="southamerica-tab" class="tab">SOUTH AMERICA</label>
+         <label for="africa" id="africa-tab" class="tab">AFRICA</label>
 
         </section>
            
         <section id="asia-panel" class="tab-content nav panel second">
             
-         <label><a href="#">HONG KONG</a></label>
+         <label><a href="hongkong.html">HONG KONG</a></label>
          <label><a href="#">TIBET</a></label>
 
         </section>
            
         <section id="europe-panel" class="tab-content nav panel second">
             
-         <label><a href="#">ENGLAND</a></label>
+         <label><a href="england.html">ENGLAND</a></label>
          <label><a href="#">GERMANY</a></label>
 
         </section>
@@ -120,9 +120,9 @@
 
      </nav> <!-- end of navigation bar -->
         
-    <header class="container one">
+    <header id="menu-container" class="container one">
 
-      <a class="open menuHandler" href="#"><section class="icon-menu"></section><span id="menu">MENU</span></a>
+      <a id="openMenu" class="open menuHandler" href="#"><section class="icon-menu"></section><span id="menu">MENU</span></a>
       <a class="pull-right" href="#"><section class="logo"></section></a>
 
     </header> <!-- end of container one -->
@@ -175,9 +175,8 @@
   </main>
     
   <script src="../js/JSON-Flickr-Data.js"></script>
-  
-  <!-- <section class="hongkong-flickr-images"></section>
-       <section class="england-flickr-images"></section> -->
+  <script src="../js/navCheckbox.js"></script>
+  <script src="../js/navigationOpenClose.js"></script>
     
 </body>
     
