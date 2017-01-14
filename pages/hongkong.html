@@ -24,13 +24,13 @@
     
    <section class="header container hongkong">
      
-     <section id="closeMenu" class="hidden nav closeMenu hidden">
+     <section id="closeMenu" class="nav closeMenu hidden">
 
-      <a class="close menuHandler" href="#"><span class="icon-remove"></span><span>Close</span></a>
+      <a id="closeMenuHandler" class="close menuHandler" href="#"><span class="icon-remove"></span><span>Close</span></a>
 
      </section>
      
-     <nav id="navbar" class="hidden navbar navbar-default hidden">
+     <nav id="navbar" class="navbar navbar-default">
 
        
        <input class="state" type="radio" title="Home" name="tab-navigation" id="home" />
@@ -45,7 +45,7 @@
        <input class="state" type="radio" title="South America" name="tab-navigation" id="southamerica" />
        <input class="state" type="radio" title="Africa" name="tab-navigation" id="africa" />
 
-       <section class="nav tabs Content">
+       <section id="firstTab" class="nav tabs Content sideNav">
 
         <label for="home" id="home-tab" class="tab"><a href="../index.html">HOME</a></label>
         <label for="gallery" id="gallery-tab" class="tab"><span>GALLERY</span></label>
@@ -55,7 +55,7 @@
 
        </section>
 
-       <section class="tab-content nav panels">
+       <section id="secondTab" class="tab-content nav panels">
          
         <section id="gallery-panel" class="tab-content nav panel">
             
@@ -175,7 +175,6 @@
   </main>
     
   <script src="../js/JSON-Flickr-Data.js"></script>
-  <script src="../js/navCheckbox.js"></script>
   <script src="../js/navigationOpenClose.js"></script>
     
 </body>

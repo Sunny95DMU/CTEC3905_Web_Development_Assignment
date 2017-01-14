@@ -75,7 +75,7 @@ footer p a {
   position: fixed;
   top: 0;
   left: 0;
-  width: 10%;
+  width: 0%;
   height: 100%;
   border-radius: 0;
   overflow: hidden;
@@ -85,6 +85,7 @@ footer p a {
   color: #fff;
   background-color: #575454;
   z-index: 200;
+  transition: 0.5s;
 }
 
 .header.container .close.menuHandler {
@@ -128,13 +129,18 @@ footer p a {
   margin: 0px;
   text-align: center;
   cursor: pointer;
+  transition: 0.3s;
 }
 
 #gallery-panel label {
   border-bottom: 1px solid #575454;
 }
 
-.header.container nav .panel {
+.header.container nav .sideNav {
+  overflow-x: hidden;
+}
+
+/*.header.container nav .panel {
   position: fixed;
   top: 0px;
   left: 10%;
@@ -145,9 +151,23 @@ footer p a {
   display: none;
   overflow: hidden;
   background-color: #3b3738;
+}*/
+
+#gallery-panel, #aboutme-panel, #contactme-panel {
+  position: fixed;
+  top: 0px;
+  left: 10%;
+  width: 0%;
+  height: 100%;
+  border-radius: 0;
+  z-index: 200;
+  transition: 0.5s;
+  overflow: hidden;
+  visibility: hidden;
+  background-color: #3b3738;
 }
 
-.header.container nav .panel.second {
+/*.header.container nav .panel.second {
   position: fixed;
   top: 0px;
   left: 30%;
@@ -157,6 +177,20 @@ footer p a {
   z-index: 200;
   display: none;
   overflow: hidden;
+  background-color: #252323;
+}*/
+
+#asia-panel, #europe-panel, #northamerica-panel, #southamerica-panel, #africa-panel {
+  position: fixed;
+  top: 0px;
+  left: 30%;
+  width: 0%;
+  height: 100%;
+  border-radius: 0;
+  z-index: 200;
+  transition: 0.5s;
+  overflow: hidden;
+  visibility: hidden;
   background-color: #252323;
 }
 
@@ -185,19 +219,6 @@ footer p a {
 .header.container nav #southamerica:checked ~ .tab-content.nav.panels #southamerica-panel,
 .header.container nav #africa:checked ~ .tab-content.nav.panels #africa-panel {
   display: block;
-}
-
-.header.container nav #gallery-panel.active {
-  position: fixed;
-  top: 0px;
-  left: 10%;
-  width: 20%;
-  height: 100%;
-  border-radius: 0;
-  z-index: 200;
-  display: block;
-  overflow: hidden;
-  background-color: #3b3738;
 }
 
 .header.container nav a {
@@ -892,6 +913,7 @@ footer .container .row p {
   
 .header.container {
   background: url(../images/carousel_background/England_Carousel.jpg) no-repeat fixed;
+  
 }
   
 .header.container.england {
@@ -976,14 +998,20 @@ footer .container .row p {
   
 .header.container {
   background: url(../images/carousel_background/England_Carousel.jpg) no-repeat fixed;
+  background-size: 100% 100%;
+  background-position: top;
 }
   
 .header.container.england {
   background: url(../images/carousel_background/England_Carousel.jpg) no-repeat fixed; 
+  background-size: 100% 100%;
+  background-position: top;
 }
 
 .header.container.hongkong {
   background: url(../images/carousel_background/HK_Carousel.jpg) no-repeat fixed; 
+  background-size: 100% 100%;
+  background-position: top;
 }
     
 /* End of Header */
@@ -1045,6 +1073,28 @@ footer .container .row p {
     
 /* End of Footer */
     
+    
+}
+
+@media (min-width : 1225px) and (max-width : 2560px) {
+    
+.header.container {
+  background: url(../images/carousel_background/England_Carousel.jpg) no-repeat fixed;
+  background-size: 100% 100%;
+  background-position: top;
+}
+    
+.header.container.england {
+  background: url(../images/carousel_background/England_Carousel.jpg) no-repeat fixed; 
+  background-size: 100% 100%;
+  background-position: top;
+}
+
+.header.container.hongkong {
+  background: url(../images/carousel_background/HK_Carousel.jpg) no-repeat fixed; 
+  background-size: 100% 100%;
+  background-position: top;
+}
     
 }
 
