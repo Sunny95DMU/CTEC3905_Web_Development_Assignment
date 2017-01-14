@@ -1,6 +1,5 @@
-(function(){
-  
-  
+(function(){  
+    
   let openMenu = document.getElementById("openMenu");
   let closeMenu = document.getElementById("closeMenu");
   let closeMove = document.getElementById("closeMenuHandler");
@@ -18,6 +17,13 @@
   let southamericaPanel = document.getElementById("southamerica-panel");
   let africaPanel = document.getElementById("africa-panel");
     
+  let smq = window.matchMedia("(min-width : 200px) and (max-width : 480px)");
+  let mmq = window.matchMedia("(min-width : 480px) and (max-width : 1024px)"); 
+  let lmq = window.matchMedia("(min-width : 1024px) and (max-width : 1224px)");
+  let xlmq = window.matchMedia("(min-width : 1224px) and (max-width : 1824px)");
+  let xxlmq = window.matchMedia("(min-width : 1225px) and (max-width : 2560px)");
+    
+    
   function getTarget(e) {
       
     if(!e) {
@@ -31,9 +37,26 @@
    }
 
   function openMenuHandler() {
-       
-    navbar.style.width = "10%";
+      
+    navbar.style.width = "0%";
+    openMenu.className += " hidden";
     closeMenu.className = "nav closeMenu";
+      
+      
+    smq.addListener(smqWidthChange);
+    smqWidthChange(smq);
+    
+    mmq.addListener(mmqWidthChange);
+    mmqWidthChange(mmq);
+    
+    lmq.addListener(lmqWidthChange);
+    lmqWidthChange(lmq);
+    
+    xlmq.addListener(xlmqWidthChange);
+    xlmqWidthChange(xlmq);
+    
+    xxlmq.addListener(xxlmqWidthChange);
+    xxlmqWidthChange(xxlmq);
       
   }
   
@@ -57,6 +80,7 @@
     africaPanel.style.width = "0%";
     africaPanel.style.visibility = "hidden";
     closeMenu.className += " hidden";
+    openMenu.className = "open menuHandler";
     
   }
     
@@ -214,6 +238,66 @@
           africaPanel.style.visibility = "visible";
           
       }
+      
+  }
+    
+  function smqWidthChange(mq) {
+      
+    if(mq.matches) {
+        
+        navbar.style.width = "60%";
+        closeMove.style.left = "61%";
+        closeMenu.className = "nav closeMenu";
+        
+    }  
+      
+  }
+    
+  function mmqWidthChange(mq) {
+      
+    if(mq.matches) {
+        
+        navbar.style.width = "30%";
+        closeMove.style.left = "31%";
+        closeMenu.className = "nav closeMenu";
+        
+    }
+      
+  }
+    
+  function lmqWidthChange(mq) {
+      
+    if(mq.matches) {
+        
+        navbar.style.width = "30%";
+        closeMove.style.left = "31%";
+        closeMenu.className = "nav closeMenu";
+        
+    }
+      
+  }
+    
+  function xlmqWidthChange(mq) {
+      
+    if(mq.matches) {
+        
+        navbar.style.width = "10%";
+        closeMove.style.left = "11%";
+        closeMenu.className = "nav closeMenu";
+        
+    }
+      
+  }
+    
+  function xxlmqWidthChange(mq) {
+      
+    if(mq.matches) {
+        
+        navbar.style.width = "10%";
+        closeMove.style.left = "11%";
+        closeMenu.className = "nav closeMenu";
+        
+    }
       
   }
     
