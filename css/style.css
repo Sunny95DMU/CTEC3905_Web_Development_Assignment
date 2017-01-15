@@ -153,6 +153,10 @@ footer p a {
   background-color: #3b3738;
 }*/
 
+section#secondTab.tab-content.nav.panels {
+  visibility: hidden;
+}
+
 #gallery-panel, #aboutme-panel, #contactme-panel {
   position: fixed;
   top: 0px;
