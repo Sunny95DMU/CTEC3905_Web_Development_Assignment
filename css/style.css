@@ -6,30 +6,21 @@ h1 {
   font-family: 'MicroExtendFLF-Bold';
 }
 
-h2, h3 {
+h2, h3, p, a {
   font-family: 'FeaturedItem';
 }
 
-p {
-  font-family: 'Museo700';
-}
-
-a {
-  font-family: 'TitilliumWeb-Bold';
-}
-
 footer a {
-  font-family: 'Museo300';
   font-size: 1.125em;
 }
 
 footer .small {
-  font-family: 'TitilliumWeb-Light';
+  font-family: 'FeaturedItem';
   font-size: 1.125em;
 }
 
 footer p a {
-  font-family: 'TitilliumWeb-Light';
+  font-family: 'FeaturedItem';
   font-size: 1em;
 }
 
@@ -80,7 +71,7 @@ footer p a {
   border-radius: 0;
   overflow: hidden;
   border: none;
-  font-family: "TitilliumWeb-Bold";
+  font-family: "FeaturedItem";
   font-size: 1.5em;
   color: #fff;
   background-color: #575454;
@@ -139,6 +130,7 @@ footer p a {
   padding: 10px;
   margin: 0px;
   text-align: center;
+  font-weight: bold;
   cursor: pointer;
   transition: 0.3s;
 }
@@ -230,7 +222,7 @@ section#secondTab.tab-content.nav.panels {
 }
 
 .header.container nav #aboutme-panel p, .header.container nav #contactme-panel p {
-  font-family: "Museo300";
+  font-family: "FeaturedItem";
   font-size: 0.875em;
 }
 
@@ -287,10 +279,41 @@ section#secondTab.tab-content.nav.panels {
   background: url(../images/thumbnails/logo.png) no-repeat;
 }
 
+.header.container .close {
+  opacity: 1;
+  font-weight: normal;
+  color: #fff;
+}
+
+.header.container .icon-menu {
+  -webkit-transition: -webkit-transform .8s ease-in-out;
+          transition: transform .8s ease-in-out;
+}
+
+.header.container .container.one #openMenu:hover {
+  text-decoration: none;
+}
+
+.header.container .container.one #openMenu:hover #menu{
+ text-decoration: none;
+ color: #EFF6EE;
+}
+
+.header.container .container.one #openMenu:hover .icon-menu {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+.header.container #closeMenuHandler:hover {
+  color: #EFF6EE;
+  background-color: inherit;
+}
+
 .header.container .container.one #menu {
  font-size: 1.5em;
  margin-left: 5px;
  color: #fff;
+ text-decoration: none;
  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3); 
 }
 
@@ -303,7 +326,7 @@ section#secondTab.tab-content.nav.panels {
   display: inline-block;
 }
 
-/* End of Header */
+/* End of Header Container 1 */
 
 .header.container .container.two .page-header {
   margin-top: 0px;
@@ -331,7 +354,7 @@ section#secondTab.tab-content.nav.panels {
 .header.container .container.two #btn-checkout {
   position: relative;
   z-index: 1;
-  font-family: 'TitilliumWeb-Bold';
+  font-family: 'FeaturedItem';
   font-size: 1.875em;
   margin-top: 5%;
   margin-bottom: 15%;
@@ -489,10 +512,6 @@ section#secondTab.tab-content.nav.panels {
   position: static;
 }
 
-.Albums p.item {
-  width: 25%;
-}
-
 .Albums img {
   width: 100%;
   height: 100%;
@@ -532,7 +551,6 @@ section#secondTab.tab-content.nav.panels {
 
 .hovereffect {
   width: 100%;
-  height: 100%;
   float: left;
   overflow: hidden;
   position: relative;
@@ -555,35 +573,6 @@ section#secondTab.tab-content.nav.panels {
   background-color: rgba(170,170,170,0.4);
 }
 
-.hovereffect h2, .hovereffect img {
-  -webkit-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
-}
-
-.hovereffect img {
-  display: block;
-  position: relative;
-  -webkit-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  transform: scale(1.1);
-}
-
-.hovereffect:hover img {
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
-}
-
-.hovereffect h2 {
-  text-transform: uppercase;
-  color: #fff;
-  text-align: center;
-  position: relative;
-  font-size: 17px;
-  padding: 10px;
-  background: rgba(0, 0, 0, 0.6);
-}
-
 .hovereffect a.info {
   display: inline-block;
   text-decoration: none;
@@ -601,10 +590,10 @@ section#secondTab.tab-content.nav.panels {
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
   font-weight: normal;
-  height: 85%;
+  height: 50%;
   width: 85%;
   position: absolute;
-  top: -20%;
+  top: 2%;
   left: 8%;
   padding: 70px;
 }

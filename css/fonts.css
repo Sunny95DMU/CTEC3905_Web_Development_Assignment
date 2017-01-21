@@ -1,3 +1,6 @@
+/** Features two fonts, one is FeaturedItem with no weights and other is MicroExtendFLF with different weights: normal, bold, italic, bold-italic **/
+
+
 @font-face {
   font-family: 'FeaturedItem';
   src: url('../fonts/FeaturedItem/FeaturedItem.ttf') format('truetype');
@@ -24,74 +27,7 @@
 
 /* End of MicroExtend Font Face */
 
-@font-face {
-  font-family: 'Museo300';
-  src: url('../fonts/Museo/Museo-300.otf') format('truetype');
-}
-@font-face {
-  font-family: 'Museo500';
-  src: url('../fonts/Museo/Museo-500.otf') format('truetype');
-}
-@font-face {
-  font-family: 'Museo700';
-  src: url('../fonts/Museo/Museo700.otf') format('truetype');
-}
 
-/* End of Museo Font Face */
-
-@font-face {
-  font-family: 'NORMAL';
-  src: url('../fonts/NORMAL/NORMAL.otf') format('truetype');
-}
-
-/* End of NORMAL Font Face */
-
-@font-face {
-  font-family: 'TitilliumWeb-Black';
-  src: url('../fonts/TitilliumWeb/TitilliumWeb-Black.ttf') format('truetype');
-}
-@font-face {
-  font-family: 'TitilliumWeb-Bold';
-  src: url('../fonts/TitilliumWeb/TitilliumWeb-Bold.ttf') format('truetype');
-}
-@font-face {
-  font-family: 'TitilliumWeb-BoldItalic';
-  src: url('../fonts/TitilliumWeb/TitilliumWeb-BoldItalic.ttf') format('truetype');
-}
-@font-face {
-  font-family: 'TitilliumWeb-ExtraLight';
-  src: url('../fonts/TitilliumWeb/TitilliumWeb-ExtraLight.ttf') format('truetype');
-}
-@font-face {
-  font-family: 'TitilliumWeb-ExtraLightItalic';
-  src: url('../fonts/TitilliumWeb/TitilliumWeb-ExtraLightItalic.ttf') format('truetype');
-}
-@font-face {
-  font-family: 'TitilliumWeb-Italic';
-  src: url('../fonts/TitilliumWeb/TitilliumWeb-Italic.ttf') format('truetype');
-}
-@font-face {
-  font-family: 'TitilliumWeb-Light';
-  src: url('../fonts/TitilliumWeb/TitilliumWeb-Light.ttf') format('truetype');
-}
-@font-face {
-  font-family: 'TitilliumWeb-LightItalic';
-  src: url('../fonts/TitilliumWeb/TitilliumWeb-LightItalic.ttf') format('truetype');
-}
-@font-face {
-  font-family: 'TitilliumWeb-Regular';
-  src: url('../fonts/TitilliumWeb/TitilliumWeb-Regular.ttf') format('truetype');
-}
-@font-face {
-  font-family: 'TitilliumWeb-SemiBold';
-  src: url('../fonts/TitilliumWeb/TitilliumWeb-SemiBold.ttf') format('truetype');
-}
-@font-face {
-  font-family: 'TitilliumWeb-SemiBoldItalic';
-  src: url('../fonts/TitilliumWeb/TitilliumWeb-SemiBoldItalic.ttf') format('truetype');
-}
-
-/* End of TitilliumWeb Font Face */
 
 
 
