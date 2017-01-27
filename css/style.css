@@ -570,13 +570,12 @@ section#secondTab.tab-content.nav.panels {
 }
 
 .hovereffect:hover .overlay {
-  background-color: rgba(170,170,170,0.4);
+  background-color: rgba(87, 84, 84, 0.7);
 }
 
 .hovereffect a.info {
   display: inline-block;
   text-decoration: none;
-  padding: 7px 14px;
   text-transform: uppercase;
   color: #fff;
   border: 1px solid #fff;
@@ -593,9 +592,10 @@ section#secondTab.tab-content.nav.panels {
   height: 50%;
   width: 85%;
   position: absolute;
-  top: 2%;
+  top: 5%;
   left: 8%;
-  padding: 70px;
+  padding: 40px;
+  font-size: 1.5em;
 }
 
 .hovereffect:hover a.info {
@@ -844,7 +844,6 @@ footer .container .row .social-sprite.instagram {
 footer .container .row p {
   display: inline-block;
   margin-top: 5%;
-  width: 100%;
   text-align: center;
 }
 
@@ -1004,7 +1003,6 @@ footer .container .row .social-sprite.instagram {
 footer .container .row p {
   display: inline-block;
   margin-top: 1%;
-  width: 100%;
   text-align: center;
 }
 
