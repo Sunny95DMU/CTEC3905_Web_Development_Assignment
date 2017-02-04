@@ -1134,76 +1134,44 @@
       
   }
     
-  if(openMenu.addEventListener) {
-        
-      openMenu.addEventListener("click", function() {
-            
-          openMenuHandler();
-            
-      }, false);
-    
-    }else {
-        
-      openMenu.attachEvent("onclick", function() {
-
-        openMenuHandler();
-
-      });
-    
+    if(openMenu.addEventListener) {
+            openMenu.addEventListener("click", function() {
+                openMenuHandler();
+            }, false);
+        }else {
+            openMenu.attachEvent("onclick", function() {
+                openMenuHandler();
+            });
     }
-  
-  if(closeMenu.addEventListener) {
 
-    closeMenu.addEventListener("click", function() {
-      
-      closeMenuHandler();
-      
-    });
-    
-  }else {
-    
-    closeMenu.attachEvent("onclick", function() {
-            
-      closeMenuHandler();
-        
-    });
-    
-  }
-    
-  if(firstTab.addEventListener) {
+    if(closeMenu.addEventListener) {
+            closeMenu.addEventListener("click", function() {
+                closeMenuHandler();
+            });
+        }else {
+            closeMenu.attachEvent("onclick", function() {    
+                closeMenuHandler();
+            });
+    }
 
-    firstTab.addEventListener("click", function(e) {
-      
-      openSecondPanel(e);
-      
-    });
-    
-  }else {
-    
-    firstTab.attachEvent("onclick", function() {
-            
-     openSecondPanel();
-        
-    });
-    
-  }
-    
-  if(secondTab.addEventListener) {
+    if(firstTab.addEventListener) {
+            firstTab.addEventListener("click", function(e) {
+                openSecondPanel(e);
+            });
+        }else {
+            firstTab.attachEvent("onclick", function() {     
+                openSecondPanel(); 
+            });
+    }
 
-    secondTab.addEventListener("click", function(e) {
-      
-      openThirdPanel(e);
-      
-    });
-    
-  }else {
-    
-    secondTab.attachEvent("onclick", function() {
-            
-     openThirdPanel();
-        
-    });
-    
-  }
+    if(secondTab.addEventListener) {
+            secondTab.addEventListener("click", function(e) {
+                openThirdPanel(e);
+            });
+        }else {
+            secondTab.attachEvent("onclick", function() {     
+                openThirdPanel();  
+            });
+    }
   
 }());
