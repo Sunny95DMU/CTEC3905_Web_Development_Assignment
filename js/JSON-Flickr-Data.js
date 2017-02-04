@@ -39,12 +39,14 @@
         let section = document.createElement("section");
           
         img.src = img_src;
+        img.id = "flickr-image" + (i + 1);
+        img.className = "flickr-images";
         img.style.width = "100%";
         img.style.height = "100%";
         section.setAttribute("class", "item");
           
-        section.appendChild(img);
         galleryContainer.appendChild(section);
+        section.appendChild(img);
           
       }
    
