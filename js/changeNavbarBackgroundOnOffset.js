@@ -15,7 +15,7 @@
     }else {
       navbar.style.backgroundColor = "inherit";
       navbar.style.marginTop = "20px";
-      navbar.style.padding = "0 15px";
+      navbar.style.padding= "0px 15px";
     }
     
   }

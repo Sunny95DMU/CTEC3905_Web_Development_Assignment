@@ -1,5 +1,40 @@
-body {
-  
+@keyframes movedown {
+  0%  { opacity: 0;
+        transform: translate3d(0px, -200px, 0px);
+        animation-timing-function: ease-in;}
+  100% {opacity: 1;
+        transform: translate3d(0px, -10px, 0px);
+        animation-timing-function: ease-in;}
+}
+
+@keyframes moveup {
+  0%  { opacity: 0;
+        transform: translate3d(0px, 200px, 0px);
+        animation-timing-function: ease-in;}
+  100% {opacity: 1;
+        transform: translate3d(0px, 10px, 0px);
+        animation-timing-function: ease-in;}
+}
+
+@keyframes showContent {
+  0%  { opacity: 0;
+        visibility: visible;
+        transform: translate3d(0px, 200px, 0px);
+        animation-timing-function: ease-in;}
+  100% {opacity: 1;
+        visibility: visible;
+        transform: translate3d(0px, 10px, 0px);
+        animation-timing-function: ease-in;}
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
 }
 
 h1 {
@@ -43,12 +78,6 @@ footer p a {
   background-position: top;
 }
 
-.header.container .image {
-   position: absolute;
-   width: 100%;
-   height: inherit;
-}
-
 .header.container.england {
   padding: 0;
   background: url(../images/carousel_background/England_Carousel.jpg) no-repeat; 
@@ -86,6 +115,7 @@ footer p a {
   position: fixed;
   top: 10px;
   left: 11%;
+  z-index: 1000;
 }
 
 .header.container .close.menuHandler .icon-remove {
@@ -377,24 +407,6 @@ section#secondTab.tab-content.nav.panels {
   animation: moveup 1s 0.1s;
 }
 
-@keyframes movedown {
-  0%  { opacity: 0;
-        transform: translate3d(0px, -200px, 0px);
-        animation-timing-function: ease-in;}
-  100% {opacity: 1;
-        transform: translate3d(0px, -10px, 0px);
-        animation-timing-function: ease-in;}
-}
-
-@keyframes moveup {
-  0%  { opacity: 0;
-        transform: translate3d(0px, 200px, 0px);
-        animation-timing-function: ease-in;}
-  100% {opacity: 1;
-        transform: translate3d(0px, 10px, 0px);
-        animation-timing-function: ease-in;}
-}
-
 .header.container .container.two #btn-checkout:hover {
   color: #000;
 }
@@ -454,7 +466,7 @@ section#secondTab.tab-content.nav.panels {
           transition: transform .8s ease-in-out;
 }
 
-.header.container .container.two .icon-right-arrow, .header.container.two icon-left-arrow {
+.header.container .container.two .icon-right-arrow:hover, .header.container .container.two .icon-left-arrow:hover {
   -webkit-transform: rotate(360deg);
           transform: rotate(360deg);
 }
@@ -627,16 +639,6 @@ section#secondTab.tab-content.nav.panels {
   animation-duration: 0.6s;
 }
 
-@-webkit-keyframes zoom {
-  from {-webkit-transform:scale(0)} 
-  to {-webkit-transform:scale(1)}
-}
-
-@keyframes zoom {
-  from {transform:scale(0)} 
-  to {transform:scale(1)}
-}
-
 .gallery-close {
   position: absolute;
   top: 7%;
@@ -733,14 +735,15 @@ section#secondTab.tab-content.nav.panels {
   margin-top: 0px;
   margin-bottom: 0px; 
 }
-  
-.Info .item {
-  width: 33.3%;
-}
 
 .Info .item {
+  width: 33.3%;
   border-right: 1px solid #fff;
   background-color: #575454;
+}
+
+.item .info .is-paused {
+  animation-play-state: paused;
 }
 
 .Info .item:last-of-type {
@@ -779,6 +782,11 @@ footer .container .row p a {
 footer .container .row .btn.instagram {
   background-color: #875c28;
   padding: 13px 10px;
+}
+
+footer .container .row .btn.instagram:hover {
+  background-color: #875519;
+  transition: all 0.3s;
 }
 
 footer .container .row .social-sprite.instagram {
@@ -839,12 +847,14 @@ footer .container .row p {
   width: 16px;
   height: 16px;
   background-size: 16px 16px;
+  margin-top: -3%;
 }
 
 .header.container .container.two .icon-right-arrow {
   width: 16px;
   height: 16px;
   background-size: 16px 16px;
+  margin-top: -3%;
 }
 
 /* End of Header */
@@ -901,7 +911,48 @@ footer .container .row p {
   color: #fff;
 }
     
+.modal {
+  padding-top: 100px; 
+  padding-bottom: 100px; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+}
+
+.modal-content {
+  width: 80%;
+  max-width: 700px;
+}
+
+.gallery-close {
+  top: 7%;
+  right: 1%;
+}
+   
 /* End of Albums */  
+
+.hovereffect a.info {
+  margin: 50px 0 0 0;
+  filter: alpha(opacity=0);
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  height: 50%;
+  width: 85%;
+  top: -10%;
+  left: 8%;
+  padding: 20px 0px;
+  font-size: 1.2em;
+}
+
+.hovereffect:hover a.info {
+  -webkit-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  transform: scale(0.8);
+}
+
+/* End of Hover Effect */
 
 .Info .container-fluid {
   padding: 0px;
@@ -991,7 +1042,7 @@ footer .container .row p {
 }
 
 .header.container .container.two .icon-left-arrow, .header.container .container.two .icon-right-arrow {
-  margin-top: -20%;
+  margin-top: -39%;
 }
 
 .header.container .container.two .icon-left-arrow {
@@ -1060,7 +1111,34 @@ footer .container .row p {
   color: #fff;
 }
     
+.modal {
+  padding-top: 100px; 
+  padding-bottom: 100px; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+}
+
+.modal-content {
+  width: 80%;
+  max-width: 700px;
+}
+
+.gallery-close {
+  top: 7%;
+  right: 1%;
+}
+    
 /* End of Albums */ 
+    
+.hovereffect a.info {
+  padding: 50px 0px;
+  font-size: 2em;
+}
+
+
+/* End of Hover Effect */
   
 .Info .container-fluid {
   padding: 0px;
@@ -1099,6 +1177,8 @@ footer .container .row p a {
 
 footer .container .row .btn.instagram {
   padding: 10px 7px;
+  width: 50%;
+  margin: 0 auto;
 }
 
 footer .container .row .social-sprite.instagram {
@@ -1110,7 +1190,7 @@ footer .container .row .social-sprite.instagram {
 footer .container .row p {
   display: inline-block;
   margin-top: 1%;
-  text-align: center;
+  width: 100%;
 }
 
 /* End of Footer */
@@ -1134,6 +1214,11 @@ footer .container .row p {
 .header.container.hongkong {
   background: url(../images/carousel_background/HK_Carousel.jpg) no-repeat fixed; 
 }
+    
+.header.container .container.two .icon-left-arrow, .header.container .container.two .icon-right-arrow {
+  margin-top: -38%;
+}
+
     
 /* End of Header */
     
@@ -1182,6 +1267,25 @@ footer .container .row p {
 
 .Albums p {
   font-size: 2em;
+}
+    
+.modal {
+  padding-top: 100px; 
+  padding-bottom: 100px; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+}
+
+.modal-content {
+  width: 80%;
+  max-width: 700px;
+}
+
+.gallery-close {
+  top: 7%;
+  right: 1%;
 }
     
 /* End of Albums */
@@ -1289,6 +1393,27 @@ footer .container .row p {
 
 @media (min-width : 1225px) and (max-width : 2560px) {
     
+.modal {
+  padding-top: 100px; 
+  padding-bottom: 100px; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+}
+
+.modal-content {
+  width: 80%;
+  max-width: 1200px;
+}
+
+.gallery-close {
+  top: 7%;
+  right: 1%;
+}
+    
+/* End of Albums */
+       
 .header.container {
   background: url(../images/carousel_background/England_Carousel.jpg) no-repeat fixed;
   background-size: 100% 100%;
