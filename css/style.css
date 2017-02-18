@@ -1,3 +1,14 @@
+/*
+  This file is the main file for styling the content of the entire site.
+ */
+
+/*
+  The following are keyframes that are utilized by different elements within the site, it offers: 
+    - Effects for a nice translation effect
+    - Effects for fading in items by changing their opacity to max
+    - Effects for zooming in an item from normal scale to a larger scale
+ */
+
 @keyframes movedown {
   0%  { opacity: 0;
         transform: translate3d(0px, -200px, 0px);
@@ -16,15 +27,10 @@
         animation-timing-function: ease-in;}
 }
 
-@keyframes showContent {
-  0%  { opacity: 0;
-        visibility: visible;
-        transform: translate3d(0px, 200px, 0px);
-        animation-timing-function: ease-in;}
-  100% {opacity: 1;
-        visibility: visible;
-        transform: translate3d(0px, 10px, 0px);
-        animation-timing-function: ease-in;}
+@keyframes fdsseq { 
+  100% { 
+    opacity: 1; 
+  }
 }
 
 @-webkit-keyframes zoom {
@@ -36,6 +42,10 @@
   from {transform:scale(0)} 
   to {transform:scale(1)}
 }
+
+/*
+  Here all the tags are being declared, setting default values so changes are easy to maintain later
+ */
 
 h1 {
   font-family: 'MicroExtendFLF-Bold';
@@ -60,6 +70,10 @@ footer p a {
 }
 
 /* End of Font Family Setup */
+
+/*
+  This section plays with the container classes, setting default values 
+ */
 
 .container {
   width: 100%;
@@ -93,6 +107,23 @@ footer p a {
 }
 
 /* End of Container */
+
+
+/*
+  This section plays with the nav class
+
+  The nav is being set to fixed, on the left hand side of the screen with a height of 100%,
+  covering the entire screen. A transistion is added for a nice effect. This is all
+  controlled by JavaScript but the styling is done here.
+
+  It also fixes the close tag as fixed, slightly adjusted away from the nav bar so it looks clean. 
+  A icon is added to the close tag, to add more effect
+
+  All tabs/labels/a are inline-block within the nav bar with text aligned to center. 
+
+  All the panels are fixed and aligned a bit to the right from the first nav bar, they are triggered
+  via CSS selectors but some parts are also controlled using JavaScript. 
+ */
 
 .header.container nav {
   position: fixed;
@@ -187,19 +218,6 @@ footer p a {
   overflow-x: hidden;
 }
 
-/*.header.container nav .panel {
-  position: fixed;
-  top: 0px;
-  left: 10%;
-  width: 20%;
-  height: 100%;
-  border-radius: 0;
-  z-index: 200;
-  display: none;
-  overflow: hidden;
-  background-color: #3b3738;
-}*/
-
 section#secondTab.tab-content.nav.panels {
   visibility: hidden;
 }
@@ -217,19 +235,6 @@ section#secondTab.tab-content.nav.panels {
   visibility: hidden;
   background-color: #3b3738;
 }
-
-/*.header.container nav .panel.second {
-  position: fixed;
-  top: 0px;
-  left: 30%;
-  width: 10%;
-  height: 100%;
-  border-radius: 0;
-  z-index: 200;
-  display: none;
-  overflow: hidden;
-  background-color: #252323;
-}*/
 
 #asia-panel, #europe-panel, #northamerica-panel, #southamerica-panel, #africa-panel {
   position: fixed;
@@ -299,6 +304,14 @@ section#secondTab.tab-content.nav.panels {
 
 /* End of Nav */
 
+/*
+  This section deals with the containers within the first section of the site.
+
+  container one represents the header which contains the menu and logo information. It 
+  is set as fixed with a logo added with the use of css background property as well as adding
+  some transistional effects to the menu icon for some nice effects. 
+ */
+
 .header.container .container.one {
   position: fixed;
   z-index: 100;
@@ -361,6 +374,18 @@ section#secondTab.tab-content.nav.panels {
 
 /* End of Header Container 1 */
 
+/*
+  The second containers within the first section deals with the information content,
+  all default bootstrap properties are being removed and are being set as preferred. 
+  
+  In this section the aligning of elements is being done according to the interface design,
+  and styles are being applied. Keyframes that were declared are now being utilized in some of
+  the areas, for a nice effect for when the site initially loads. 
+
+  Other areas such as the arrows are doing the same thing, they are styled and positioned as well
+  as given their own transition effect 
+ */
+
 .header.container .container.two .page-header {
   margin-top: 0px;
   margin-bottom: 0px;
@@ -388,7 +413,7 @@ section#secondTab.tab-content.nav.panels {
   animation: movedown 1s 0.1s ease-in;
 }
 
-.header.container .container.two #btn-checkout {
+.header.container .container.two .btn-checkout {
   position: relative;
   z-index: 1;
   font-family: 'FeaturedItem';
@@ -407,12 +432,12 @@ section#secondTab.tab-content.nav.panels {
   animation: moveup 1s 0.1s;
 }
 
-.header.container .container.two #btn-checkout:hover {
+.header.container .container.two .btn-checkout:hover {
   color: #000;
 }
 
 
-.header.container .container.two #btn-checkout::after {
+.header.container .container.two .btn-checkout::after {
   position: absolute;
   content: '';
   bottom: 0;
@@ -426,7 +451,7 @@ section#secondTab.tab-content.nav.panels {
   z-index: -1;
 }
 
-.header.container .container.two #btn-checkout:hover::after {
+.header.container .container.two .btn-checkout:hover::after {
   transform: scaleY(1);
 }
 
@@ -477,6 +502,15 @@ section#secondTab.tab-content.nav.panels {
 
 /* End of Header Container Section */
 
+/*
+  This section deals with the second section of the site which is the Plans. 
+
+  In this section aligning of elements is being done and any unwanted properties are being removed
+  that was set by bootstrap as default. Images are being added to each of the different contient types
+  as well as adding a 3D transform style for displaying a front and back information panel via the use of
+  hover. 
+ */
+
 .Plans {
   background-color: #3b3738;
   color: #fdf3e7;
@@ -492,7 +526,7 @@ section#secondTab.tab-content.nav.panels {
   margin-bottom: 0px;
 }
 
-.Plans .col-lg-3 {
+.Plans .col-lg-4 {
   margin-top: 6%;
 }
 
@@ -544,7 +578,55 @@ section#secondTab.tab-content.nav.panels {
   font-size: 1.875em;
 }
 
+
+.Plans .flip_container {
+  perspective: 1000;
+}
+
+.Plans .flip_info {
+  transform-style: preserve-3d;
+  transition: all 1.0s linear;
+}
+
+.Plans .flip_container:hover .flip_info {
+  transform: rotateY(180deg);
+}
+
+.Plans .face {
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.Plans .face.back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotateY(180deg);
+}
+
+.Plans ul li {
+  font-family: "MicroExtendFLF";
+  margin-top: 20px;
+  font-size: 1.5em;
+}
+
 /* End of Header Plans */
+
+/*
+  Here the Albums section is the third section within the site and also the section
+  for other pages. This section sets its display to flex with the flex direction set to row
+  for wrapping each elements as they arrive accordingly, forming a box full of content that is being
+  pushed from the right to left. 
+
+  All item classes are the content that holds each individual album content set to 25% width by default and relative
+  to the parent, so that any other infomration added as a child within the item container can adjust itself within that
+  container.
+
+  All images that are within the gallery are also considered, they are given a transition effect and a opacity is set
+  for informing users that they are hovering over an image as well as giving nice effects. Here the modal is also set
+  to display none so that it is activated by JavaScript. 
+ */
 
 .Albums {
   background-color: #3b3738;
@@ -658,6 +740,15 @@ section#secondTab.tab-content.nav.panels {
 
 /* End of Albums */
 
+/*
+  The hovereffect properties are declared after the Albums section has been defined, it is essentially
+  setting all the overlay effects for when the user is hovering over the div tags. 
+
+  The hovereffect is first declared, setting default properties, same is applied for the overlay.
+  Then when the item is hovered, the display of those properties are set to show which adds 
+  transistion effects as well as zooming in the content by setting the scale. 
+ */
+
 .hovereffect {
   width: 100%;
   float: left;
@@ -674,7 +765,6 @@ section#secondTab.tab-content.nav.panels {
   overflow: hidden;
   top: 0;
   left: 0;
-  -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
 
@@ -692,10 +782,7 @@ section#secondTab.tab-content.nav.panels {
   background-color: transparent;
   opacity: 0;
   filter: alpha(opacity=0);
-  -webkit-transform: scale(1.5);
-  -ms-transform: scale(1.5);
   transform: scale(1.5);
-  -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
   font-weight: normal;
   height: 50%;
@@ -710,13 +797,19 @@ section#secondTab.tab-content.nav.panels {
 .hovereffect:hover a.info {
   opacity: 1;
   filter: alpha(opacity=100);
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
   transform: scale(1);
   background-color: rgba(0,0,0,0.4);
 }
 
 /* End of Hover Effect */
+
+/*
+  Here the Info section is the 4th content displayed in the site.
+
+  Here flex is utilized for moving the items in a row wrapped and centering the content, to 
+  display the content nicely. The inital width is 33.3% fitting 3 elements together at a time. 
+  By default they are set to show nothing until JavaScript triggers the event.
+ */
 
 .Info {
   background-color: #575454;
@@ -742,10 +835,6 @@ section#secondTab.tab-content.nav.panels {
   background-color: #575454;
 }
 
-.item .info .is-paused {
-  animation-play-state: paused;
-}
-
 .Info .item:last-of-type {
   border: none;
 }
@@ -753,8 +842,18 @@ section#secondTab.tab-content.nav.panels {
 .Info .item.info h1 {
   margin-top: 10px;
 }
-  
+
+.fades .item.info {
+  opacity: 0;
+}
+
 /* End of Info */
+
+/*
+  Here the footer section is the last section of the site. 
+
+  The following only sets the properties for displaying the footer according to the interface design.
+ */
 
 footer {
   padding: 5% 0;
@@ -806,6 +905,10 @@ footer .container .row p {
 
 /* End of Footer */
 
+/*
+  The following is for small devices
+ */
+
 @media (min-width : 200px) and (max-width : 480px) {
     
 .header.container .container.one {
@@ -834,7 +937,7 @@ footer .container .row p {
   font-size: 2.5em;
 }
 
-.header.container .container.two #btn-checkout {
+.header.container .container.two .btn-checkout {
   font-size: 0.938em;
   padding: 10px 25px;
 }
@@ -1009,6 +1112,10 @@ footer .container .row p {
 
 }
 
+/*
+  The following is for medium devices
+ */
+
 @media (min-width : 480px) and (max-width : 1024px) {
     
 .header.container .container.one {
@@ -1036,7 +1143,7 @@ footer .container .row p {
   font-size: 3.5em;
 }
 
-.header.container .container.two #btn-checkout {
+.header.container .container.two .btn-checkout {
   font-size: 1.3em;
   padding: 18.5px 37px;
 }
@@ -1197,6 +1304,10 @@ footer .container .row p {
     
 }
 
+/*
+  The following is for large devices
+ */
+
 @media (min-width : 1024px) and (max-width : 1224px) {
     
 .header.container .container.two .icon-left-arrow, .header.container .container.two .icon-right-arrow {
@@ -1279,7 +1390,7 @@ footer .container .row p {
 }
 
 .modal-content {
-  width: 80%;
+  width: 20%;
   max-width: 700px;
 }
 
@@ -1304,6 +1415,10 @@ footer .container .row p {
 /* End of Footer */
     
 }
+
+/*
+  The following is for extra large devices
+ */
 
 @media (min-width : 1224px) and (max-width : 1824px) {
       
@@ -1391,6 +1506,10 @@ footer .container .row p {
     
 }
 
+/*
+  The following is for extra extra large devices
+ */
+
 @media (min-width : 1225px) and (max-width : 2560px) {
     
 .modal {
@@ -1404,7 +1523,6 @@ footer .container .row p {
 
 .modal-content {
   width: 80%;
-  max-width: 1200px;
 }
 
 .gallery-close {

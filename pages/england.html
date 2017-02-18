@@ -1,190 +1,203 @@
 <!DOCTYPE html>
 
 <html>
-    
-<head>    
-    
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
-    
-  <title>SunnyShoots</title>
+
+    <head>    
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+
+        <title>SunnyShoots</title>
+      
+        <!-- Use of bootstrap is very limited, only using for grid layout -->
+        <!-- Use of fonts.css decalres all fonts, which are ready to be used in style.css -->
+        <!-- Use of style.css contains all the main styling in this file -->
+
+        <link rel="stylesheet" href="../bootstrap/css/bootstrap.css" type="text/css" />
+        <link rel="stylesheet" href="../bootstrap/css/bootstrap-theme.css" type="text/css" />
+        <link rel="stylesheet" href="../css/fonts.css" type="text/css" />
+        <link rel="stylesheet" href="../css/style.css" type="text/css" />
+
+    </head>
+
+    <body>
+      
+        <!-- All content of the entire website is wrapped in "main container" -->
+
+        <main class="main container">
+          
+            <!-- "header container" contains the first section of the entire website -->
+
+            <section class="header container england">
+              
+                <!-- "closeMenu" is the div container for holding the inline close tag, starts off hidden but shown using JavaScript,
+                   it is used for closing the navigation bar -->
+
+                <div id="closeMenu" class="nav closeMenu hidden">
+                    <a id="closeMenuHandler" class="close menuHandler" href="#"><span class="icon-remove"></span><span>Close</span></a>
+                </div>
+              
+                <!-- The nav tag holds the entire content of the navigation bar, it utilises inputs and labels instead of traditional
+                   unordered lists to make the navigation bar. It has 2 different tab navigations. The overall design is to make 3 tabbed
+                   navigation bar, so the first tab and second tabs are provided along with their own content panels to display -->
+
+                <nav id="navbar" class="navbar navbar-default">
+                  
+                    <!-- These inputs act as the controller for changing the panel view -->
+
+                    <input class="state" type="radio" title="Home" name="tab-navigation" id="home" />
+                    <input class="state" type="radio" title="Gallery" name="tab-navigation" id="gallery" />
+                    <input class="state" type="radio" title="About Me" name="tab-navigation" id="aboutme" />
+                    <input class="state" type="radio" title="Contact Me" name="tab-navigation" id="contactme" />
+                    <input class="state" type="radio" title="Progress" name="tab-navigation" id="progress" />
+
+                    <input class="state" type="radio" title="Asia" name="tab-navigation" id="asia" />
+                    <input class="state" type="radio" title="Europe" name="tab-navigation" id="europe" />
+                    <input class="state" type="radio" title="North America" name="tab-navigation" id="northamerica" />
+                    <input class="state" type="radio" title="South America" name="tab-navigation" id="southamerica" />
+                    <input class="state" type="radio" title="Africa" name="tab-navigation" id="africa" />
+                  
+                    <!-- Here the firstTab contains the content to display, it utilises CSS to trigger the correct tabs/panels -->
+
+                    <section id="firstTab" class="nav tabs Content sideNav">
+                        <a href="../index.html">HOME</a>
+                        <label for="gallery" id="gallery-tab" class="tab">GALLERY</label>
+                        <label for="aboutme" id="aboutme-tab" class="tab">ABOUT ME</label>
+                        <label for="contactme" id="contactme-tab" class="tab">CONTACT ME</label>
+                        <a href="#">PROGRESS</a>
+                    </section>
+                  
+                    <!-- Here the secondTab contains the content to display, it utilises CSS to trigger the correct tabs/panels -->
+
+                    <section id="secondTab" class="tab-content nav panels">
+
+                        <div id="gallery-panel" class="tab-content nav panel">
+                            <label for="asia" id="asia-tab" class="tab">ASIA</label>
+                            <label for="europe" id="europe-tab" class="tab">EUROPE</label>
+                            <label for="northamerica" id="northamerica-tab" class="tab">NORTH AMERICA</label>
+                            <label for="southamerica" id="southamerica-tab" class="tab">SOUTH AMERICA</label>
+                            <label for="africa" id="africa-tab" class="tab">AFRICA</label>
+                        </div>
+                      
+                        <!-- The following are all the panels that are displayed when the correct tab has been clicked -->
+
+                        <div id="asia-panel" class="tab-content nav panel second">
+                            <a href="hongkong.html">HONG KONG</a>
+                            <a href="#">TIBET</a>
+                            <a href="#">THAILAND</a>
+                            <a href="#">JAPAN</a>
+                        </div>
+
+                        <div id="europe-panel" class="tab-content nav panel second">
+                            <a href="england.html">ENGLAND</a>
+                            <a href="#">GERMANY</a>
+                        </div>
+
+                        <div id="northamerica-panel" class="tab-content nav panel second"></div>
+
+                        <div id="southamerica-panel" class="tab-content nav panel second">
+                            <a href="#">PERU</a>
+                        </div>
+
+                        <div id="africa-panel" class="tab-content nav panel second"></div>
+
+                        <div id="aboutme-panel" class="tab-content nav panel">
+                            <h1>HELLO</h1>
+                            <p>My name is Sukh, people call me Sunny. I want to be a travel photographer and develop my photography skills as I go along with my journeys. I also want to take up videography and combine it with the skills I possess and use my Web Development knowledge to promot myself in the artistic field. My current portfolio is just something I took out of interest and wish to develop it further through the arts of editing.</p>
+                            <h1>MY GEAR</h1>
+                            <p>Canon EOS 700D</p>
+                            <p>Canon EFS 18-55mm</p>
+                        </div>
+
+                        <div id="contactme-panel" class="tab-content nav panel">
+                            <h1>CONTACT ME</h1>
+                            <p>My name is Sukh, people call me Sunny. I want to be a travel photographer and develop my photography skills as I go along with my journeys. I have not visited many countries but plan to do so after my education. So far I have not taken many photographs but would love to explore more in this field. Any helpful advice I can get would be appreciated. My contact details are listed below.</p>
+                            <h1>MY DETAILS</h1>
+                            <p>Email: s.sunny_1995@hotmail.co.uk</p>
+                            <p>Instagram: @sunnyshootsss</p>
+                        </div>
+
+                        <div id="progress-panel" class="tab-content nav panel"></div>
+
+                    </section>
+
+                </nav> <!-- end of navigation bar -->
+          
+                <!-- "menu-container" is the container that holds the inline elements Menu along with the logo together
+                This is the element that allows the nav bar to open using JavaScript -->
+
+                <header id="menu-container" class="container one">
+                    <a id="openMenu" class="open menuHandler" href="#"><div class="icon-menu"></div><span id="menu">MENU</span></a>
+                    <a class="pull-right"><div class="logo"></div></a>
+                </header> <!-- end of container one -->
+          
+                <!-- "container two" in provides information
+                      only on the current gallery -->
+
+                <section class="container two text-center">
+
+                    <header id="Carousel" class="carousel slide">
+                        <div class="active page-header page-header-england">
+                            <h3>June, 2016</h3>
+                            <h1 class="margin bottom content">England</h1>
+                        </div>
+                    </header> 
+                  
+                </section> <!-- end of container two --> 
+
+            </section> <!-- end of header container -->
+      
+            <!-- This acts as an offset for triggering the Javascript for the "menu-container" to have a background -->
+
+            <div id="offset"></div>  
+      
+            <!-- The following Albums section will load the content concerning the country, so all content for that country
+                 is loaded. The id "..-flickr-images" represents the country in which the images will be loaded, JavaScript is
+                 used for retrieving the images and storing it into appropriate origin of country. The images are appended into this
+                 div -->
+
+            <section id="albums" class="Albums">
+
+                <div id="england-flickr-images" class="container-fluid text-center">
+
+                    <!-- ALL IMAGES ADDED HERE -->
+
+                </div> <!-- end of container fluid -->
+
+                <div id="myModal" class="modal">
+                    <span class="gallery-close">&times;</span>
+                    <img src="#" class="modal-content" id="img01" alt="Images are loaded here">
+                </div>
+
+            </section> <!-- end of Section Albums -->
+
+            <!-- Here is the footer section, provides a copyright tag as well as a button to visit the instagram page -->
+
+            <footer>
+
+                <section class="container">
+
+                    <div class="row">
+                        <a href="https://www.instagram.com/sunnyshootsss/" class="btn instagram"><span class="social-sprite instagram">&nbsp;</span>Check out my Instagram</a>
+                        <p class="small copyright">&copy; Copyright <strong><a href="#">SunnyShoots</a></strong> 2016</p>
+                    </div> 
+
+                </section> <!-- end of container -->
+
+            </footer> <!-- end of footer -->
+          
+        </main>
   
-  <link rel="stylesheet" href="../bootstrap/css/bootstrap.css" type="text/css" />
-  <link rel="stylesheet" href="../bootstrap/css/bootstrap-theme.css" type="text/css" />
-  <link rel="stylesheet" href="../css/fonts.css" type="text/css" />
-  <link rel="stylesheet" href="../css/style.css" type="text/css" />
-    
-</head>
-    
-<body>
-  
-  <main class="main container">
-    
-   <section class="header container england">
-     
-     <section id="closeMenu" class="nav closeMenu hidden">
+        <!-- The following are all JavaScript files for the dynamic effects that occurs within the page
+           It is all done manually without the support of any JQuery -->
 
-      <a id="closeMenuHandler" class="close menuHandler" href="#"><span class="icon-remove"></span><span>Close</span></a>
+        <script src="../js/JSON-Flickr-Data.js"></script>
+        <script src="../js/galleryPopUp.js"></script>
+        <script src="../js/navigationOpenClose.js"></script>
+        <script src="../js/changeNavbarBackgroundOnOffset.js"></script>
 
-     </section>
-     
-     <nav id="navbar" class="navbar navbar-default">
+    </body>
 
-       
-       <input class="state" type="radio" title="Home" name="tab-navigation" id="home" />
-       <input class="state" type="radio" title="Gallery" name="tab-navigation" id="gallery" />
-       <input class="state" type="radio" title="About Me" name="tab-navigation" id="aboutme" />
-       <input class="state" type="radio" title="Contact Me" name="tab-navigation" id="contactme" />
-       <input class="state" type="radio" title="Progress" name="tab-navigation" id="progress" />
-         
-       <input class="state" type="radio" title="Asia" name="tab-navigation" id="asia" />
-       <input class="state" type="radio" title="Europe" name="tab-navigation" id="europe" />
-       <input class="state" type="radio" title="North America" name="tab-navigation" id="northamerica" />
-       <input class="state" type="radio" title="South America" name="tab-navigation" id="southamerica" />
-       <input class="state" type="radio" title="Africa" name="tab-navigation" id="africa" />
-
-       <section id="firstTab" class="nav tabs Content sideNav">
-
-        <a href="../index.html">HOME</a>
-        <label for="gallery" id="gallery-tab" class="tab">GALLERY</label>
-        <label for="aboutme" id="aboutme-tab" class="tab">ABOUT ME</label>
-        <label for="contactme" id="contactme-tab" class="tab">CONTACT ME</label>
-        <a href="#">PROGRESS</a>
-
-       </section>
-
-       <section id="secondTab" class="tab-content nav panels">
-         
-        <section id="gallery-panel" class="tab-content nav panel">
-            
-         <label for="asia" id="asia-tab" class="tab">ASIA</label>
-         <label for="europe" id="europe-tab" class="tab">EUROPE</label>
-         <label for="northamerica" id="northamerica-tab" class="tab">NORTH AMERICA</label>
-         <label for="southamerica" id="southamerica-tab" class="tab">SOUTH AMERICA</label>
-         <label for="africa" id="africa-tab" class="tab">AFRICA</label>
-
-        </section>
-           
-        <section id="asia-panel" class="tab-content nav panel second">
-            
-         <a href="hongkong.html">HONG KONG</a>
-         <a href="#">TIBET</a>
-
-        </section>
-           
-        <section id="europe-panel" class="tab-content nav panel second">
-            
-         <a href="england.html">ENGLAND</a>
-         <a href="#">GERMANY</a>
-
-        </section>
-           
-        <section id="northamerica-panel" class="tab-content nav panel second"></section>
-           
-        <section id="southamerica-panel" class="tab-content nav panel second">
-           
-          <a href="#">PERU</a>
-            
-        </section>
-           
-        <section id="africa-panel" class="tab-content nav panel second"></section>
-           
-        <section id="aboutme-panel" class="tab-content nav panel">
-          
-         <h1>HELLO</h1>
-         <p>My name is Sukh, people call me Sunny. I want to be a travel photographer and develop my photography skills as I go along with my journeys. I also want to take up videography and combine it with the skills I possess and use my Web Development knowledge to promot myself in the artistic field. My current portfolio is just something I took out of interest and wish to develop it further through the arts of editing.</p>
-         <h1>MY GEAR</h1>
-         <p>Canon EOS 700D</p>
-         <p>Canon EFS 18-55mm</p>
-          
-        </section>
-         
-        <section id="contactme-panel" class="tab-content nav panel">
-          
-         <h1>CONTACT ME</h1>
-         <p>My name is Sukh, people call me Sunny. I want to be a travel photographer and develop my photography skills as I go along with my journeys. I have not visited many countries but plan to do so after my education. So far I have not taken many photographs but would love to explore more in this field. Any helpful advice I can get would be appreciated. My contact details are listed below.</p>
-         <h1>MY DETAILS</h1>
-         <p>Email: s.sunny_1995@hotmail.co.uk</p>
-         <p>Instagram: @sunnyshootsss</p>
-          
-        </section>
-         
-        <section id="progress-panel" class="tab-content nav panel">
-          
-          
-        </section>
-
-       </section>
-
-     </nav> <!-- end of navigation bar -->
-        
-    <header id="menu-container" class="container one">
-
-      <a id="openMenu" class="open menuHandler" href="#"><section class="icon-menu"></section><span id="menu">MENU</span></a>
-      <a class="pull-right"><section class="logo"></section></a>
-
-    </header> <!-- end of container one -->
-    
-    <section class="container two text-center">
-
-     <header id="Carousel" class="carousel slide">
-        
-      <div class="active page-header page-header-england">
-
-       <h3>June, 2016</h3>
-       <h1 class="margin bottom content">England</h1>
-
-      </div>
-        
-     </header> 
-
-    </section> <!-- end of container two --> 
-        
-   </section> <!-- end of header container -->
-      
-   <div id="offset"></div>
-    
-   <section id="albums" class="Albums">
-     
-    <section id="england-flickr-images" class="container-fluid text-center">
-     
-        <!-- ALL IMAGES ADDED HERE -->
-      
-    </section> <!-- end of container fluid -->
-     
-    <div id="myModal" class="modal">
-      <span class="gallery-close">&times;</span>
-      <img class="modal-content" id="img01">
-    </div>
-     
-   </section> <!-- end of Section Albums -->
-    
-   
-   <footer>
-     
-    <section class="container">
-      
-     <section class="row">
-
-      <a href="https://www.instagram.com/sunnyshootsss/" class="btn instagram"><span class="social-sprite instagram">&nbsp;</span>Check out my Instagram</a>
-      <p class="small copyright">&copy; Copyright <strong><a href="#">SunnyShoots</a></strong> 2016</p>
-
-     </section> 
-      
-    </section> <!-- end of container -->
-     
-   </footer> <!-- end of footer -->
-    
-    
-  </main>
-    
-  <script src="../js/JSON-Flickr-Data.js"></script>
-  <script src="../js/galleryPopUp.js"></script>
-  <script src="../js/navigationOpenClose.js"></script>
-  <script src="../js/changeNavbarBackgroundOnOffset.js"></script>
-    
-</body>
-    
 </html>

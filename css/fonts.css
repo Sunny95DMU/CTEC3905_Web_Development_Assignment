@@ -1,4 +1,12 @@
-/** Features two fonts, one is FeaturedItem with no weights and other is MicroExtendFLF with different weights: normal, bold, italic, bold-italic **/
+/** 
+
+  This file is for declaring all the font face that are to be utilized within the site.
+
+  It features two fonts: 
+    - FeaturedItem with no weights 
+    - MicroExtendFLF with different weights: normal, bold, italic, bold-italic 
+
+**/
 
 
 @font-face {
