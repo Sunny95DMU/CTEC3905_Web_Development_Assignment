@@ -1,4 +1,4 @@
-"# CTEC3905_Web_Development_Assignment" 
+# CTEC3905_Web_Development_Assignment 
 
 This website is aimed at providing information on the galleries that were collected throughout the journeys undertaken over the years. It is a portfolio site of the photographs.
 
