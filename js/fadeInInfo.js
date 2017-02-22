@@ -40,7 +40,15 @@
   //The listener is added to the window object with the event scroll 
   //passed by the changeBackground function, allowing the listening of any changes
 
-  window.addEventListener('scroll', changeBackground, false); 
+  if(window.addEventListener) {   
+    window.addEventListener('scroll', function(){
+      changeBackground(); 
+    }, false); 
+  }else {
+    window.attachEvent("onscroll", function(){
+      changeBackground();
+    });
+  }
   
 }());
 
