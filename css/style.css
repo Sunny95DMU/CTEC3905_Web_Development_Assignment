@@ -945,20 +945,22 @@ footer .container .row p {
 .header.container .container.two .icon-left-arrow, .header.container .container.two .icon-right-arrow {
   margin-top: -25%;
 }
-
+  
 .header.container .container.two .icon-left-arrow {
-  width: 16px;
-  height: 16px;
-  background-size: 16px 16px;
-  margin-top: -3%;
+  width: 32px;
+  height: 32px;
+  background-size: 32px 32px;
+  margin-top: -10%;
 }
 
 .header.container .container.two .icon-right-arrow {
-  width: 16px;
-  height: 16px;
-  background-size: 16px 16px;
-  margin-top: -3%;
+  width: 32px;
+  height: 32px;
+  background-size: 32px 32px;
+  margin-top: -10%;
 }
+
+
 
 /* End of Header */
 
@@ -1153,15 +1155,15 @@ footer .container .row p {
 }
 
 .header.container .container.two .icon-left-arrow {
-  width: 16px;
-  height: 16px;
-  background-size: 16px 16px;
+  width: 32px;
+  height: 32px;
+  background-size: 32px 32px;
 }
 
 .header.container .container.two .icon-right-arrow {
-  width: 16px;
-  height: 16px;
-  background-size: 16px 16px;
+  width: 32px;
+  height: 32px;
+  background-size: 32px 32px;
 }
 
 /* End of Header */
