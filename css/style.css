@@ -945,22 +945,20 @@ footer .container .row p {
 .header.container .container.two .icon-left-arrow, .header.container .container.two .icon-right-arrow {
   margin-top: -25%;
 }
-  
+
 .header.container .container.two .icon-left-arrow {
-  width: 32px;
-  height: 32px;
-  background-size: 32px 32px;
-  margin-top: -10%;
+  width: 16px;
+  height: 16px;
+  background-size: 16px 16px;
+  margin-top: -3%;
 }
 
 .header.container .container.two .icon-right-arrow {
-  width: 32px;
-  height: 32px;
-  background-size: 32px 32px;
-  margin-top: -10%;
+  width: 16px;
+  height: 16px;
+  background-size: 16px 16px;
+  margin-top: -3%;
 }
-
-
 
 /* End of Header */
 
