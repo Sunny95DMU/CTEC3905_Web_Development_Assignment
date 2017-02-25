@@ -30,7 +30,7 @@
   //when the arrows are clicked
 
   let arr = ["england", "hongkong"];
-  let carouselarr = ["England_carousel.jpg", "HK_Carousel.jpg"];
+  let carouselarr = ["England_Carousel.jpg", "HK_Carousel.jpg"];
 
   //The following variable is declared for knowing the screen is enlarged or not, it is of type boolean
   
