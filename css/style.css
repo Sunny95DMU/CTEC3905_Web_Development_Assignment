@@ -590,6 +590,8 @@ section#secondTab.tab-content.nav.panels {
 
 .Plans .flip_container:hover .flip_info {
   transform: rotateY(180deg);
+  -ms-transform: rotate(180deg); 
+  -webkit-transform: rotate(180deg);
 }
 
 .Plans .face {
@@ -603,6 +605,9 @@ section#secondTab.tab-content.nav.panels {
   top: 0;
   left: 0;
   transform: rotateY(180deg);
+  -ms-transform: rotate(180deg); 
+  -webkit-transform: rotate(180deg); 
+
 }
 
 .Plans ul li {
